@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/*
+ * Placeholder tokens - replace with the real palette during design.
+ * Light is defined on bare :root; dark only redefines the same names, so no
+ * colour has its single definition inside a media query. The [data-theme]
+ * blocks let a manual toggle win in both directions.
+ */
+@theme {
+  --color-bg: #fbfbfa;
+  --color-surface: #ffffff;
+  --color-line: rgb(0 0 0 / 0.08);
+  --color-text: #16181d;
+  --color-muted: #5b616e;
+  --color-accent: #2f6f4f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --color-bg: #0e1014;
+    --color-surface: #15181e;
+    --color-line: rgb(255 255 255 / 0.07);
+    --color-text: #f3f4f6;
+    --color-muted: #9aa1ad;
+    --color-accent: #6ee7a8;
+  }
+}
+
+:root[data-theme='dark'] {
+  --color-bg: #0e1014;
+  --color-surface: #15181e;
+  --color-line: rgb(255 255 255 / 0.07);
+  --color-text: #f3f4f6;
+  --color-muted: #9aa1ad;
+  --color-accent: #6ee7a8;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
