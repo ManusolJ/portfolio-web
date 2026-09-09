@@ -32,6 +32,7 @@
     "@angular/platform-server": "^21.2.0",
     "@angular/router": "^21.2.0",
     "@angular/ssr": "^21.2.23",
+    "@lucide/angular": "^1.43.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },
@@ -53,6 +54,9 @@
     "typescript": "~5.9.2",
     "typescript-eslint": "^8.69.0",
     "vitest": "^4.0.8",
-    "wrangler": "^4.129.0"
+    "wrangler": "^4.15.2"
+  },
+  "overrides": {
+    "sharp": "^0.35.4"
   }
 }
