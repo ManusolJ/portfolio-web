@@ -24,7 +24,7 @@ module.exports = tseslint.config(
       '@angular-eslint/prefer-on-push-component-change-detection': 'error',
       '@typescript-eslint/array-type': 'off',
       '@typescript-eslint/no-empty-function': ['error', { allow: ['arrowFunctions'] }],
-      eqeqeq: ['error', 'always', { null: 'ignore' }],
+      'eqeqeq': ['error', 'always', { null: 'ignore' }],
       'no-console': 'error',
       '@typescript-eslint/no-explicit-any': 'error',
       '@typescript-eslint/naming-convention': [
