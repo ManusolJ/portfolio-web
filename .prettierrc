@@ -12,7 +12,13 @@
       }
     },
     {
-      "files": ["*.md", "*.yml", "*.yaml"],
+      "files": "*.md",
+      "options": {
+        "embeddedLanguageFormatting": "off"
+      }
+    },
+    {
+      "files": ["*.yml", "*.yaml"],
       "options": {
         "singleQuote": false
       }

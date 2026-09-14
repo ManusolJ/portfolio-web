@@ -1,6 +1,7 @@
 const eslint = require('@eslint/js');
 const angular = require('angular-eslint');
 const tseslint = require('typescript-eslint');
+const perfectionist = require('eslint-plugin-perfectionist');
 
 module.exports = tseslint.config(
   {
@@ -25,6 +26,7 @@ module.exports = tseslint.config(
       '@typescript-eslint/array-type': 'off',
       '@typescript-eslint/no-empty-function': ['error', { allow: ['arrowFunctions'] }],
       'eqeqeq': ['error', 'always', { null: 'ignore' }],
+      'no-empty': ['error', { allowEmptyCatch: true }],
       'no-console': 'error',
       '@typescript-eslint/no-explicit-any': 'error',
       '@typescript-eslint/naming-convention': [
@@ -43,6 +45,68 @@ module.exports = tseslint.config(
         { selector: 'classProperty', modifiers: ['static'], format: ['UPPER_CASE', 'camelCase'] },
         { selector: 'parameter', format: ['camelCase'], leadingUnderscore: 'allow' },
       ],
+    },
+  },
+  {
+    files: ['**/*.ts'],
+    plugins: { perfectionist },
+    rules: {
+      'perfectionist/sort-imports': [
+        'error',
+        {
+          type: 'line-length',
+          order: 'asc',
+          newlinesBetween: 1,
+          groups: [
+            'side-effect',
+            ['type-builtin', 'type-external'],
+            ['builtin', 'external'],
+            'env-type',
+            'env',
+            'core-type',
+            'core',
+            'interfaces-type',
+            'interfaces',
+            'constants-type',
+            'constants',
+            'shared-type',
+            'shared',
+            'layout-type',
+            'layout',
+            'features-type',
+            'features',
+            ['type-parent', 'type-sibling', 'type-index'],
+            ['parent', 'sibling', 'index'],
+            'unknown',
+          ],
+          customGroups: [
+            { groupName: 'env-type', elementNamePattern: '^@env/', modifiers: ['type'] },
+            { groupName: 'env', elementNamePattern: '^@env/' },
+            { groupName: 'core-type', elementNamePattern: '^@core/', modifiers: ['type'] },
+            { groupName: 'core', elementNamePattern: '^@core/' },
+            {
+              groupName: 'interfaces-type',
+              elementNamePattern: '^@interfaces/',
+              modifiers: ['type'],
+            },
+            { groupName: 'interfaces', elementNamePattern: '^@interfaces/' },
+            {
+              groupName: 'constants-type',
+              elementNamePattern: '^@constants/',
+              modifiers: ['type'],
+            },
+            { groupName: 'constants', elementNamePattern: '^@constants/' },
+            { groupName: 'shared-type', elementNamePattern: '^@shared/', modifiers: ['type'] },
+            { groupName: 'shared', elementNamePattern: '^@shared/' },
+            { groupName: 'layout-type', elementNamePattern: '^@layout/', modifiers: ['type'] },
+            { groupName: 'layout', elementNamePattern: '^@layout/' },
+            { groupName: 'features-type', elementNamePattern: '^@features/', modifiers: ['type'] },
+            { groupName: 'features', elementNamePattern: '^@features/' },
+          ],
+        },
+      ],
+      'perfectionist/sort-named-imports': ['error', { type: 'line-length', order: 'asc' }],
+      '@typescript-eslint/consistent-type-imports': 'error',
     },
   },
   {
