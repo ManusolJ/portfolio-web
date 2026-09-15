@@ -1,0 +1,13 @@
+<div class="flex flex-col items-center">
+  <img alt="" src="profile-photo.jpg" class="size-32 rounded-lg" />
+  <h2 class="mt-4 text-center text-xl font-bold tracking-wide">Manuel Soler Juan</h2>
+  <h3 class="text-muted text-center text-sm font-semibold">{{ jobTitle }}</h3>
+  <a
+    download
+    [href]="downloadLink"
+    class="bg-accent text-bg hover:bg-accent/85 focus-visible:outline-accent mt-5 inline-flex w-full items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2"
+  >
+    <svg lucideDownload size="16" class="shrink-0"></svg>
+    {{ downloadAction }}
+  </a>
+</div>
