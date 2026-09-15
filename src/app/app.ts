@@ -1,12 +1,15 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
+
+import { Dock } from '@layout/dock/dock';
+import { Panel } from '@layout/panel/panel';
+import { Sidebar } from '@layout/sidebar/sidebar';
 
 @Component({
-  imports: [RouterOutlet],
+  imports: [Sidebar, Panel, Dock],
   selector: 'app-root',
-  styleUrl: './app.scss',
   templateUrl: './app.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class App {
-  protected readonly title = signal('portfolio-web');
+  protected readonly skipLabel = $localize`:@@a11y.skip:Saltar al contenido`;
 }
