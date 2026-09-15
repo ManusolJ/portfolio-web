@@ -1,5 +1,30 @@
 @import 'tailwindcss';
 
+@font-face {
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300 800;
+  font-family: 'Open Sans Variable';
+  src: url(@fontsource-variable/open-sans/files/open-sans-latin-ext-wght-normal.woff2)
+    format('woff2-variations');
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
+    U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Open Sans Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300 800;
+  src: url(@fontsource-variable/open-sans/files/open-sans-latin-wght-normal.woff2)
+    format('woff2-variations');
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 @theme static {
   --color-bg: #fbfbfa;
   --color-muted: #5b616e;
@@ -7,6 +32,8 @@
   --color-surface: #ffffff;
   --color-content: #16181d;
   --color-line: rgb(0 0 0 / 0.08);
+
+  --font-sans: 'Open Sans Variable', ui-sans-serif, system-ui, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,7 +41,7 @@
     --color-bg: #0e1014;
     --color-muted: #9aa1ad;
     --color-accent: #6ee7a8;
-    --color-surface: #15181e;
+    --color-surface: #1d2330;
     --color-content: #f3f4f6;
     --color-line: rgb(255 255 255 / 0.07);
   }
@@ -24,7 +51,7 @@
   --color-bg: #0e1014;
   --color-muted: #9aa1ad;
   --color-accent: #6ee7a8;
-  --color-surface: #15181e;
+  --color-surface: #1d2330;
   --color-content: #f3f4f6;
   --color-line: rgb(255 255 255 / 0.07);
 }
@@ -37,6 +64,19 @@ html {
 body {
   margin: 0;
   height: 100%;
+  isolation: isolate;
   color: var(--color-content);
   background: var(--color-bg);
+}
+
+body::before {
+  inset: 0;
+  z-index: -1;
+  content: '';
+  position: fixed;
+  mask-size: cover;
+  pointer-events: none;
+  mask-position: center;
+  mask-image: url('../public/backdrop.svg');
+  background-color: color-mix(in oklab, var(--color-accent) 20%, transparent);
 }
