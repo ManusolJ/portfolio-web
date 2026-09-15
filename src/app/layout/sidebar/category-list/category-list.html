@@ -1,0 +1,21 @@
+<nav class="w-full h-full" [attr.aria-label]="navLabel">
+  <ul class="flex flex-col gap-1">
+    @for (item of categories; track item.route) {
+      <li>
+        <a
+          class="text-muted hover:bg-line hover:text-content aria-[current=page]:bg-accent/10 aria-[current=page]:text-accent focus-visible:outline-accent flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium no-underline transition-colors aria-[current=page]:font-semibold focus-visible:outline-2 focus-visible:outline-offset-2"
+          [routerLink]="item.route"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          [routerLinkActiveOptions]="{ exact: item.route === '/' }"
+        >
+          <ng-container
+            [ngComponentOutlet]="item.icon"
+            [ngComponentOutletInputs]="{ size: 18, class: 'shrink-0' }"
+          />
+          <span>{{ item.category }}</span>
+        </a>
+      </li>
+    }
+  </ul>
+</nav>
