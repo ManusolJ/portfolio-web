@@ -1,5 +1,5 @@
+import { NgIcon } from '@ng-icons/core';
 import { RouterLink } from '@angular/router';
-import { NgComponentOutlet } from '@angular/common';
 import { computed, Component, ChangeDetectionStrategy } from '@angular/core';
 
 import type { NavGroup } from '@shared/models/nav-group';
@@ -8,7 +8,7 @@ import { injectRouterUrl } from '@shared/utils/inject-router-url';
 import { groupOf, routesIn, DOCK_TABS } from '@shared/constants/navigation';
 
 @Component({
-  imports: [NgComponentOutlet, RouterLink],
+  imports: [NgIcon, RouterLink],
   selector: 'app-dock',
   templateUrl: './dock.html',
   host: { class: 'lg:hidden' },

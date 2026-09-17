@@ -10,10 +10,7 @@
           [routerLink]="firstRouteOf(tab.group)"
           [attr.aria-current]="activeGroup() === tab.group ? true : null"
         >
-          <ng-container
-            [ngComponentOutlet]="tab.icon"
-            [ngComponentOutletInputs]="{ size: 22, class: 'shrink-0' }"
-          />
+          <ng-icon [svg]="tab.icon" size="22" class="shrink-0" />
           <span>{{ tab.label }}</span>
         </a>
       </li>

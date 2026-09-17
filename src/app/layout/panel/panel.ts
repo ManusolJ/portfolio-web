@@ -7,6 +7,7 @@ import { GroupTabs } from './group-tabs/group-tabs';
   imports: [RouterOutlet, GroupTabs],
   selector: 'app-panel',
   templateUrl: './panel.html',
+  host: { class: 'flex flex-col' },
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Panel {}
