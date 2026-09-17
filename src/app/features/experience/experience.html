@@ -1,0 +1,24 @@
+<app-title-card [icon]="icon" [pretitle]="pretitle" [title]="title" />
+
+<ol class="mt-10 flex flex-col gap-4">
+  @for (entry of entries; track $index) {
+    <li>
+      <app-timeline-card [entry]="entry">
+        <ul class="text-content mt-3 max-w-prose list-disc space-y-1 pl-5 text-sm leading-relaxed">
+          @for (duty of entry.duties; track $index) {
+            <li>{{ duty }}</li>
+          }
+        </ul>
+        <ul class="mt-4 flex flex-wrap gap-2" [attr.aria-label]="tagsLabel">
+          @for (tag of entry.tags; track tag) {
+            <li
+              class="border-line text-muted rounded-full border px-2.5 py-0.5 text-xs font-medium"
+            >
+              {{ tag }}
+            </li>
+          }
+        </ul>
+      </app-timeline-card>
+    </li>
+  }
+</ol>
