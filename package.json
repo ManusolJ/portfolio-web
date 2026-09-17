@@ -9,7 +9,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "extract-i18n": "ng extract-i18n --output-path src/locale",
-    "create-interface": "ng generate interface --path=src/app/shared/interfaces",
+    "create-interface": "ng generate interface --path=src/app/shared/models",
     "create-feature": "ng generate component --skip-tests true --path=src/app/features",
     "create-service": "ng generate service --skip-tests true --path=src/app/core/services",
     "create-component": "ng generate component --skip-tests true --path=src/app/shared/components"
