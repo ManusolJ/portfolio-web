@@ -1,0 +1,48 @@
+<app-title-card [icon]="icon" [pretitle]="pretitle" [title]="title" />
+
+<app-carousel class="mt-10" [label]="capabilitiesLabel">
+  @for (capability of capabilities; track $index) {
+    <article
+      class="border-line flex shrink-0 basis-full snap-center flex-col gap-3 rounded-lg border p-4 sm:basis-[calc((100%-1rem)/2)] sm:snap-start lg:basis-[calc((100%-2rem)/3)]"
+    >
+      <span
+        class="bg-accent/10 text-accent flex size-10 shrink-0 items-center justify-center rounded-lg"
+      >
+        <ng-icon [svg]="capability.icon" size="22" />
+      </span>
+      <div>
+        <h2 class="font-semibold">{{ capability.name }}</h2>
+        <p class="text-muted mt-1 text-sm leading-relaxed">{{ capability.summary }}</p>
+      </div>
+    </article>
+  }
+</app-carousel>
+
+@for (stack of stacks; track $index) {
+  <section class="mt-10">
+    <h2 class="text-xl font-bold">{{ stack.title }}</h2>
+    <ul class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      @for (technology of stack.technologies; track technology.name) {
+        <li class="border-line flex items-center gap-3 rounded-lg border px-4 py-3">
+          <ng-icon [svg]="technology.icon" size="28" class="shrink-0" />
+          <span class="font-medium">{{ technology.name }}</span>
+        </li>
+      }
+    </ul>
+  </section>
+}
+
+<section class="mt-10">
+  <h2 class="text-xl font-bold">{{ languagesTitle }}</h2>
+  <ul class="mt-4 flex flex-col gap-3">
+    @for (language of languages; track $index) {
+      <li class="border-line rounded-lg border px-4 py-3">
+        <p class="font-medium">
+          {{ language.name }}
+          <span class="text-muted font-normal"> &#8594; {{ language.level }}</span>
+        </p>
+        <p class="text-muted mt-1 text-sm leading-relaxed">{{ language.summary }}</p>
+      </li>
+    }
+  </ul>
+</section>

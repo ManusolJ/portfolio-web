@@ -30,6 +30,7 @@
     "@ng-icons/core": "^34.0.0",
     "@ng-icons/lucide": "^34.0.0",
     "@ng-icons/tabler-icons": "^34.0.0",
+    "@ng-icons/devicon": "^34.0.0",
     "@fontsource-variable/open-sans": "^5.3.0"
   },
   "devDependencies": {
