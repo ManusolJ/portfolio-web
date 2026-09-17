@@ -43,7 +43,9 @@ export class ButtonSelect {
 
   protected reposition(): void {
     const menu = this.menu().nativeElement;
-    if (!menu.matches(':popover-open')) return;
+    if (!menu.matches(':popover-open')) {
+      return;
+    }
 
     const anchor = this.trigger().nativeElement.getBoundingClientRect();
     const { width, height } = menu.getBoundingClientRect();

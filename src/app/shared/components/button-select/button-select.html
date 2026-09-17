@@ -9,14 +9,14 @@
   [attr.popovertarget]="menuId"
 >
   @if (currentIcon.kind === 'image') {
-    <img class="size-4 shrink-0" [src]="currentIcon.src" alt="" />
+    <img class="size-6 shrink-0" [src]="currentIcon.src" alt="" />
   } @else {
     <ng-container
       [ngComponentOutlet]="currentIcon.component"
-      [ngComponentOutletInputs]="{ size: 16, class: 'shrink-0' }"
+      [ngComponentOutletInputs]="{ size: 20, class: 'shrink-0' }"
     />
   }
-  <span class="whitespace-nowrap">{{ current.label }}</span>
+  <span class="whitespace-nowrap text-lg font-semibold">{{ current.label }}</span>
 </button>
 
 <div
@@ -31,7 +31,7 @@
     @let icon = option.icon;
     @if (option.href) {
       <a
-        class="text-content hover:bg-line flex w-full items-center gap-2 rounded-md px-2.5 py-1.5 text-sm no-underline"
+        class="text-content hover:bg-line flex w-full items-center gap-2 rounded-md px-2.5 py-1.5 text-lg no-underline"
         role="menuitem"
         [href]="option.href"
       >
@@ -40,7 +40,7 @@
         } @else {
           <ng-container
             [ngComponentOutlet]="icon.component"
-            [ngComponentOutletInputs]="{ size: 16, class: 'shrink-0' }"
+            [ngComponentOutletInputs]="{ size: 18, class: 'shrink-0' }"
           />
         }
         <span>{{ option.label }}</span>
@@ -48,7 +48,7 @@
     } @else {
       <button
         type="button"
-        class="text-content hover:bg-line aria-checked:text-accent flex w-full cursor-pointer items-center gap-2 rounded-md px-2.5 py-1.5 text-sm aria-checked:font-semibold"
+        class="text-content hover:bg-line aria-checked:text-accent flex w-full cursor-pointer items-center gap-2 rounded-md px-2.5 py-1.5 text-lg aria-checked:font-semibold"
         role="menuitemradio"
         [attr.popovertarget]="menuId"
         popovertargetaction="hide"
