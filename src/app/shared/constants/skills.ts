@@ -116,16 +116,19 @@ export const TOOL_SKILLS: readonly Technology[] = [
 
 export const LANGUAGES: readonly Language[] = [
   {
+    image: 'images/flags/es.svg',
     name: $localize`:@@skills.languages.spanish.name:Español`,
     level: $localize`:@@skills.languages.spanish.level:Lengua materna`,
     summary: $localize`:@@skills.languages.spanish.summary:Comunicación oral y escrita a nivel profesional.`,
   },
   {
+    image: 'images/flags/en.svg',
     name: $localize`:@@skills.languages.english.name:Inglés`,
     level: $localize`:@@skills.languages.english.level:C1 certificado (EF SET)`,
     summary: $localize`:@@skills.languages.english.summary:Conversación y escritura fluidas; cómodo en entornos de trabajo en inglés.`,
   },
   {
+    image: 'images/flags/ct.svg',
     name: $localize`:@@skills.languages.valencian.name:Valenciano`,
     level: $localize`:@@skills.languages.valencian.level:A2`,
     summary: $localize`:@@skills.languages.valencian.summary:Nivel básico.`,

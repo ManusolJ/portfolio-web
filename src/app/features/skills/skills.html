@@ -37,10 +37,13 @@
   <ul class="mt-4 flex flex-col gap-3">
     @for (language of languages; track $index) {
       <li class="border-line rounded-lg border px-4 py-3">
-        <p class="font-medium">
-          {{ language.name }}
-          <span class="text-muted font-normal"> &#8594; {{ language.level }}</span>
-        </p>
+        <div class="flex gap-2 items-center">
+          <img [src]="language.image" alt="" class="size-12 object-contain" />
+          <p class="font-medium">
+            {{ language.name }}
+            <span class="text-muted font-normal"> &#8594; {{ language.level }}</span>
+          </p>
+        </div>
         <p class="text-muted mt-1 text-sm leading-relaxed">{{ language.summary }}</p>
       </li>
     }
