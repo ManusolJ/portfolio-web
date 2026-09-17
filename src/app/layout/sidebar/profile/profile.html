@@ -1,13 +1,13 @@
 <div class="flex flex-col items-center">
-  <img alt="" src="profile-photo.jpg" class="size-48 rounded-lg" />
-  <h2 class="mt-4 text-center text-2xl font-bold tracking-wide">Manuel Soler Juan</h2>
-  <h3 class="text-muted text-center text-sm font-bold">{{ jobTitle }}</h3>
+  <img alt="" src="profile-photo.jpg" class="size-44 rounded-lg" />
+  <h2 class="mt-4 text-center text-xl font-bold">Manuel Soler Juan</h2>
+  <h3 class="text-muted mt-0.5 text-center text-sm font-medium">{{ jobTitle }}</h3>
   <a
     download
     [href]="downloadLink"
-    class="bg-accent text-bg hover:bg-accent/85 focus-visible:outline-accent mt-5 inline-flex w-full items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-lg font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2"
+    class="border-accent text-accent hover:bg-accent hover:text-bg focus-visible:outline-accent mt-6 inline-flex w-full border-2 items-center justify-center gap-2 rounded-lg px-4 py-2.5 font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2"
   >
-    <svg lucideDownload size="20" class="shrink-0"></svg>
+    <svg lucideDownload size="18" class="shrink-0"></svg>
     {{ downloadAction }}
   </a>
 </div>
