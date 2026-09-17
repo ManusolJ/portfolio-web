@@ -1,6 +1,6 @@
 import type { ElementRef } from '@angular/core';
 
-import { NgComponentOutlet } from '@angular/common';
+import { NgIcon } from '@ng-icons/core';
 import {
   input,
   output,
@@ -15,7 +15,7 @@ import type { SelectableOption } from '@shared/models/selectable-option';
 let nextId = 0;
 
 @Component({
-  imports: [NgComponentOutlet],
+  imports: [NgIcon],
   selector: 'app-button-select',
   host: { class: 'inline-block' },
   templateUrl: './button-select.html',

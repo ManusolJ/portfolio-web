@@ -9,10 +9,7 @@
           ariaCurrentWhenActive="page"
           [routerLinkActiveOptions]="{ exact: item.route === '/' }"
         >
-          <ng-container
-            [ngComponentOutlet]="item.icon"
-            [ngComponentOutletInputs]="{ size: 20, class: 'shrink-0' }"
-          />
+          <ng-icon [svg]="item.icon" size="20" class="shrink-0" />
           <span>{{ item.category }}</span>
         </a>
       </li>

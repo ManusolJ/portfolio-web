@@ -11,10 +11,7 @@
   @if (currentIcon.kind === 'image') {
     <img class="size-4 shrink-0" [src]="currentIcon.src" alt="" />
   } @else {
-    <ng-container
-      [ngComponentOutlet]="currentIcon.component"
-      [ngComponentOutletInputs]="{ size: 16, class: 'shrink-0' }"
-    />
+    <ng-icon [svg]="currentIcon.svg" size="16" class="shrink-0" />
   }
   <span class="whitespace-nowrap font-semibold">{{ current.label }}</span>
 </button>
@@ -38,10 +35,7 @@
         @if (icon.kind === 'image') {
           <img class="size-4 shrink-0" [src]="icon.src" [alt]="option.value" />
         } @else {
-          <ng-container
-            [ngComponentOutlet]="icon.component"
-            [ngComponentOutletInputs]="{ size: 16, class: 'shrink-0' }"
-          />
+          <ng-icon [svg]="icon.svg" size="16" class="shrink-0" />
         }
         <span>{{ option.label }}</span>
       </a>
@@ -58,10 +52,7 @@
         @if (icon.kind === 'image') {
           <img class="size-4 shrink-0" [src]="icon.src" alt="" />
         } @else {
-          <ng-container
-            [ngComponentOutlet]="icon.component"
-            [ngComponentOutletInputs]="{ size: 16, class: 'shrink-0' }"
-          />
+          <ng-icon [svg]="icon.svg" size="16" class="shrink-0" />
         }
         <span>{{ option.label }}</span>
       </button>

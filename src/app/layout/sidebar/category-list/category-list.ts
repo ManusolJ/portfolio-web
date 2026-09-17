@@ -1,11 +1,11 @@
-import { NgComponentOutlet } from '@angular/common';
+import { NgIcon } from '@ng-icons/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { CATEGORY_LIST } from '@shared/constants/navigation';
 
 @Component({
-  imports: [NgComponentOutlet, RouterLink, RouterLinkActive],
+  imports: [NgIcon, RouterLink, RouterLinkActive],
   selector: 'app-category-list',
   templateUrl: './category-list.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

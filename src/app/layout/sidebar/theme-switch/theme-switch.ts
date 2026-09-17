@@ -1,4 +1,4 @@
-import { LucideSun, LucideMoon, LucideMonitor } from '@lucide/angular';
+import { lucideSun, lucideMoon, lucideMonitor } from '@ng-icons/lucide';
 import { inject, Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { ThemeStore } from '@core/services/theme-store';
@@ -26,24 +26,24 @@ export class ThemeSwitch {
       value: 'system',
       label: $localize`:@@theme.system:Sistema`,
       icon: {
-        kind: 'lucide',
-        component: LucideMonitor,
+        kind: 'svg',
+        svg: lucideMonitor,
       },
     },
     {
       value: 'light',
       label: $localize`:@@theme.light:Claro`,
       icon: {
-        kind: 'lucide',
-        component: LucideSun,
+        kind: 'svg',
+        svg: lucideSun,
       },
     },
     {
       value: 'dark',
       label: $localize`:@@theme.dark:Oscuro`,
       icon: {
-        kind: 'lucide',
-        component: LucideMoon,
+        kind: 'svg',
+        svg: lucideMoon,
       },
     },
   ];

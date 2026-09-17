@@ -7,7 +7,7 @@
     [href]="downloadLink"
     class="border-accent text-accent hover:bg-accent hover:text-bg focus-visible:outline-accent mt-6 inline-flex w-full border-2 items-center justify-center gap-2 rounded-lg px-4 py-2.5 font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2"
   >
-    <svg lucideDownload size="18" class="shrink-0"></svg>
+    <ng-icon [svg]="downloadIcon" size="18" class="shrink-0" />
     {{ downloadAction }}
   </a>
 </div>
