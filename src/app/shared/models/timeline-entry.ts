@@ -4,6 +4,6 @@ export interface TimelineEntry {
   readonly logo: string;
   readonly start: string;
   readonly title: string;
-  readonly summary: string;
+  readonly location?: string;
   readonly organization: string;
 }
