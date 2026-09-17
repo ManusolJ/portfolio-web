@@ -1,40 +1,40 @@
 <app-title-card [icon]="icons.hand" [pretitle]="pretitle" [title]="title" />
 
 <ul
-  class="text-muted mt-6 flex flex-col items-center lg:flex-row lg:justify-center gap-x-6 gap-y-2 text-sm"
+  class="text-muted border-line mt-5 flex flex-col gap-x-6 gap-y-2 border-b pb-6 text-sm lg:flex-row lg:flex-wrap"
   [attr.aria-label]="contactLabel"
 >
   <li class="flex items-center gap-2">
-    <ng-icon [svg]="icons.mapPin" size="18" class="text-accent shrink-0" />
+    <ng-icon [svg]="icons.mapPin" size="20" class="text-accent shrink-0" />
     Santa Pola, Alicante
   </li>
   <li class="flex items-center gap-2">
-    <ng-icon [svg]="icons.mail" size="18" class="text-accent shrink-0" />
+    <ng-icon [svg]="icons.mail" size="20" class="text-accent shrink-0" />
     <a
       href="mailto:manusolerj@gmail.com"
-      class="hover:text-content focus-visible:outline-accent rounded no-underline transition-colors hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
+      class="text-content hover:text-accent focus-visible:outline-accent rounded font-medium no-underline transition-colors hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
     >
       manusolerj@gmail.com
     </a>
   </li>
   <li class="flex items-center gap-2">
-    <ng-icon [svg]="icons.github" size="18" class="text-accent shrink-0" />
+    <ng-icon [svg]="icons.github" size="20" class="text-accent shrink-0" />
     <a
       href="https://github.com/ManusolJ"
       target="_blank"
       rel="noopener noreferrer"
-      class="hover:text-content focus-visible:outline-accent rounded no-underline transition-colors hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
+      class="text-content hover:text-accent focus-visible:outline-accent rounded font-medium no-underline transition-colors hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
     >
       ManusolJ
     </a>
   </li>
   <li class="flex items-center gap-2">
-    <ng-icon [svg]="icons.linkedin" size="18" class="text-accent shrink-0" />
+    <ng-icon [svg]="icons.linkedin" size="20" class="text-accent shrink-0" />
     <a
       href="https://www.linkedin.com/in/manusolerj/"
       target="_blank"
       rel="noopener noreferrer"
-      class="hover:text-content focus-visible:outline-accent rounded no-underline transition-colors hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
+      class="text-content hover:text-accent focus-visible:outline-accent rounded font-medium no-underline transition-colors hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
     >
       manusolerj
     </a>
@@ -42,9 +42,9 @@
 </ul>
 
 <section class="mt-10">
-  <h2 class="text-xl font-bold">{{ bioTitle }}</h2>
+  <h2 class="text-2xl font-bold">{{ bioTitle }}</h2>
   @for (paragraph of bio; track $index) {
-    <p class="text-muted mt-3 max-w-3xl leading-relaxed">{{ paragraph }}</p>
+    <p class="text-content mt-3 max-w-prose leading-relaxed">{{ paragraph }}</p>
   }
   <a
     routerLink="/contact"

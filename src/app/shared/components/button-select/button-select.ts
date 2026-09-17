@@ -42,6 +42,10 @@ export class ButtonSelect {
   }
 
   protected reposition(): void {
+    requestAnimationFrame(() => this.place());
+  }
+
+  private place(): void {
     const menu = this.menu().nativeElement;
     if (!menu.matches(':popover-open')) {
       return;

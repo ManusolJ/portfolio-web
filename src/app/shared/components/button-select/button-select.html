@@ -4,9 +4,9 @@
 <button
   #trigger
   type="button"
-  class="border-line text-content hover:bg-line hover:border-accent focus-visible:outline-accent flex cursor-pointer items-center gap-2 rounded-lg border bg-transparent px-3 py-2.5 text-sm transition-colors focus-visible:outline-2 focus-visible:outline-offset-2"
   [attr.aria-label]="label()"
   [attr.popovertarget]="menuId"
+  class="border-line text-content hover:bg-line hover:border-accent focus-visible:outline-accent flex cursor-pointer items-center gap-2 rounded-lg border bg-transparent px-3 py-2.5 text-sm transition-colors focus-visible:outline-2 focus-visible:outline-offset-2"
 >
   @if (currentIcon.kind === 'image') {
     <img class="size-4 shrink-0" [src]="currentIcon.src" alt="" />
@@ -19,10 +19,10 @@
 <div
   #menu
   class="border-line bg-surface fixed inset-auto m-0 min-w-32 rounded-xl border p-1 shadow-xl"
+  role="menu"
   popover="auto"
   [attr.id]="menuId"
-  role="menu"
-  (toggle)="reposition()"
+  (beforetoggle)="reposition()"
 >
   @for (option of options(); track option.value) {
     @let icon = option.icon;
