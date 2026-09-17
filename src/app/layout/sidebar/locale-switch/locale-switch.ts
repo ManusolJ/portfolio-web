@@ -33,7 +33,7 @@ export class LocaleSwitch {
       label: LOCALE_LABELS[locale],
       icon: {
         kind: 'image',
-        src: `${locale}.svg`,
+        src: `images/flags/${locale}.svg`,
       },
       href: locale === this.current ? undefined : `/${locale}${this.path()}`,
     })),

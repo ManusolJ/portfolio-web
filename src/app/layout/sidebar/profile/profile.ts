@@ -4,8 +4,8 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { injectCurrentLocale } from '@shared/utils/inject-current-locale';
 
-const CV_ESP = 'CV_Manuel_Soler_Juan.pdf';
-const CV_ENG = 'CV_Manuel_Soler_Juan_ENG.pdf';
+const CV_ESP = 'documents/CV_Manuel_Soler_Juan.pdf';
+const CV_ENG = 'documents/CV_Manuel_Soler_Juan_ENG.pdf';
 
 @Component({
   imports: [NgIcon],

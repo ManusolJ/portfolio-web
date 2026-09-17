@@ -77,6 +77,6 @@ body::before {
   mask-size: cover;
   pointer-events: none;
   mask-position: center;
-  mask-image: url('../public/backdrop.svg');
+  mask-image: url('./styles/backdrop.svg');
   background-color: color-mix(in oklab, var(--color-accent) 20%, transparent);
 }
