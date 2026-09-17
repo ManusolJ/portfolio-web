@@ -1,0 +1,75 @@
+<app-title-card [icon]="icons.hand" [pretitle]="pretitle" [title]="title" />
+
+<ul
+  class="text-muted mt-6 flex flex-col items-center lg:flex-row lg:justify-center gap-x-6 gap-y-2 text-sm"
+  [attr.aria-label]="contactLabel"
+>
+  <li class="flex items-center gap-2">
+    <ng-icon [svg]="icons.mapPin" size="18" class="text-accent shrink-0" />
+    Santa Pola, Alicante
+  </li>
+  <li class="flex items-center gap-2">
+    <ng-icon [svg]="icons.mail" size="18" class="text-accent shrink-0" />
+    <a
+      href="mailto:manusolerj@gmail.com"
+      class="hover:text-content focus-visible:outline-accent rounded no-underline transition-colors hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
+    >
+      manusolerj@gmail.com
+    </a>
+  </li>
+  <li class="flex items-center gap-2">
+    <ng-icon [svg]="icons.github" size="18" class="text-accent shrink-0" />
+    <a
+      href="https://github.com/ManusolJ"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hover:text-content focus-visible:outline-accent rounded no-underline transition-colors hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
+    >
+      ManusolJ
+    </a>
+  </li>
+  <li class="flex items-center gap-2">
+    <ng-icon [svg]="icons.linkedin" size="18" class="text-accent shrink-0" />
+    <a
+      href="https://www.linkedin.com/in/manusolerj/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hover:text-content focus-visible:outline-accent rounded no-underline transition-colors hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
+    >
+      manusolerj
+    </a>
+  </li>
+</ul>
+
+<section class="mt-10">
+  <h2 class="text-xl font-bold">{{ bioTitle }}</h2>
+  @for (paragraph of bio; track $index) {
+    <p class="text-muted mt-3 max-w-3xl leading-relaxed">{{ paragraph }}</p>
+  }
+  <a
+    routerLink="/contact"
+    class="bg-accent text-bg hover:bg-accent/85 focus-visible:outline-accent mt-6 inline-flex items-center gap-2 rounded-lg px-4 py-2.5 font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2"
+  >
+    {{ cta }}
+    <ng-icon [svg]="icons.arrow" size="18" class="shrink-0" />
+  </a>
+</section>
+
+<section class="mt-10">
+  <h2 class="text-xl font-bold">{{ interestsTitle }}</h2>
+  <ul class="mt-4 grid gap-4 sm:grid-cols-2">
+    @for (interest of interests; track $index) {
+      <li class="border-line flex gap-4 rounded-lg border p-4">
+        <span
+          class="bg-accent/10 text-accent flex size-10 shrink-0 items-center justify-center rounded-lg"
+        >
+          <ng-icon [svg]="interest.icon" size="22" />
+        </span>
+        <div>
+          <h3 class="font-semibold">{{ interest.title }}</h3>
+          <p class="text-muted mt-1 text-sm leading-relaxed">{{ interest.description }}</p>
+        </div>
+      </li>
+    }
+  </ul>
+</section>
