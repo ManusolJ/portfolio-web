@@ -81,10 +81,6 @@ function headers() {
 
 /*/media/*
   Cache-Control: public, max-age=31536000, immutable
-
-${['/', '/404.html', ...pages.map((page) => `/${routeOf(page)}`)]
-  .map((route) => `${route}\n  Cache-Control: no-cache`)
-  .join('\n\n')}
 `;
 }
 
