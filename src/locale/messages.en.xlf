@@ -1,0 +1,1122 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="es" datatype="plaintext" original="ng2.template" target-language="en">
+    <body>
+      <trans-unit id="seo.about.title" datatype="html">
+        <source>Desarrollador full stack junior</source>
+        <target>Junior full stack developer</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.about.description" datatype="html">
+        <source>Manuel Soler Juan, desarrollador full stack junior en Alicante. Java, Spring Boot y Angular, con proyectos desplegados en servidor propio.</source>
+        <target>Manuel Soler Juan, junior full stack developer in Alicante. Java, Spring Boot and Angular, with projects deployed on a self-hosted server.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.education.title" datatype="html">
+        <source>Educación</source>
+        <target>Education</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.education.description" datatype="html">
+        <source>Formación de Manuel Soler Juan: Técnico Superior en Desarrollo de Aplicaciones Web y curso full stack con Angular y microservicios.</source>
+        <target>Manuel Soler Juan's education: Higher Technician in Web Application Development and a full stack course with Angular and microservices.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.experience.title" datatype="html">
+        <source>Experiencia</source>
+        <target>Experience</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.experience.description" datatype="html">
+        <source>Experiencia profesional de Manuel Soler Juan como desarrollador web con Angular, TypeScript y APIs REST.</source>
+        <target>Manuel Soler Juan's professional experience as a web developer with Angular, TypeScript and REST APIs.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.skills.title" datatype="html">
+        <source>Habilidades</source>
+        <target>Skills</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.skills.description" datatype="html">
+        <source>Tecnologías y capacidades de Manuel Soler Juan: Java, Spring Boot, PostgreSQL, Angular, TypeScript, Docker y más.</source>
+        <target>Manuel Soler Juan's technologies and capabilities: Java, Spring Boot, PostgreSQL, Angular, TypeScript, Docker and more.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.projects.title" datatype="html">
+        <source>Proyectos</source>
+        <target>Projects</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.projects.description" datatype="html">
+        <source>Proyectos de Manuel Soler Juan: un constructor de equipos Pokémon full stack, un bot de Discord con IA local y un homelab.</source>
+        <target>Manuel Soler Juan's projects: a full stack Pokémon team builder, a Discord bot with local AI and a homelab.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.homelab.title" datatype="html">
+        <source>Servidor</source>
+        <target>Server</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.homelab.description" datatype="html">
+        <source>Estado en vivo del servidor casero de Manuel Soler Juan, donde se despliegan sus proyectos.</source>
+        <target>Live status of Manuel Soler Juan's home server, where his projects are deployed.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.contact.title" datatype="html">
+        <source>Contacto</source>
+        <target>Contact</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.contact.description" datatype="html">
+        <source>Escribe a Manuel Soler Juan para ofertas, colaboraciones o preguntas.</source>
+        <target>Write to Manuel Soler Juan about job offers, collaborations or questions.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.notFound.title" datatype="html">
+        <source>Página no encontrada</source>
+        <target>Page not found</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a11y.skip" datatype="html">
+        <source>Saltar al contenido</source>
+        <target>Skip to content</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.default.description" datatype="html">
+        <source>Portfolio de Manuel Soler Juan, desarrollador full stack junior: Java, Spring Boot, Angular y despliegues en servidor propio.</source>
+        <target>Portfolio of Manuel Soler Juan, junior full stack developer: Java, Spring Boot, Angular and self-hosted deployments.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/services/seo-title-strategy.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.pretitle" datatype="html">
+        <source>Hola, soy Manuel</source>
+        <target>Hi, I'm Manuel</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.title" datatype="html">
+        <source>Desarrollador full stack junior</source>
+        <target>Junior full stack developer</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.contact.label" datatype="html">
+        <source>Contacto</source>
+        <target>Contact</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.bio.title" datatype="html">
+        <source>Un poco sobre mí</source>
+        <target>A bit about me</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.bio.p1" datatype="html">
+        <source>Me muevo con soltura entre el backend y el frontend, pero donde más disfruto es en el lado del servidor: modelar bases de datos, montar sistemas de autenticación y llevar cada proyecto hasta el despliegue.</source>
+        <target>I move comfortably between backend and frontend, but the server side is where I enjoy myself most: modelling databases, building authentication systems and taking every project all the way to deployment.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.bio.p2" datatype="html">
+        <source>Trabajo sobre todo con Java y Spring Boot en el backend y Angular con TypeScript en el frontend, con PostgreSQL, Docker y Linux de por medio.</source>
+        <target>I work mainly with Java and Spring Boot on the backend and Angular with TypeScript on the frontend, with PostgreSQL, Docker and Linux in between.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.bio.p3" datatype="html">
+        <source>Todavía me queda mucho por aprender, y precisamente por eso busco un equipo con gente que sepa más que yo. Si crees que encajo en el tuyo, escríbeme.</source>
+        <target>I still have a lot to learn, and that is exactly why I'm looking for a team with people who know more than I do. If you think I'd fit in yours, drop me a line.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.cta" datatype="html">
+        <source>Contáctame</source>
+        <target>Contact me</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.interests.title" datatype="html">
+        <source>Intereses personales</source>
+        <target>Personal interests</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.title" datatype="html">
+        <source>Hablemos</source>
+        <target>Let's talk</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.pretitle" datatype="html">
+        <source>Contacto</source>
+        <target>Contact</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.intro" datatype="html">
+        <source>¿Tienes una oferta, una pregunta o un proyecto en mente? Escríbeme y te responderé a la dirección que indiques.</source>
+        <target>Got a job offer, a question or a project in mind? Write to me and I'll reply to the address you provide.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.name" datatype="html">
+        <source>Nombre</source>
+        <target>Name</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.subject" datatype="html">
+        <source>Asunto</source>
+        <target>Subject</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.message" datatype="html">
+        <source>Mensaje</source>
+        <target>Message</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.send" datatype="html">
+        <source>Enviar mensaje</source>
+        <target>Send message</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.email" datatype="html">
+        <source>Correo electrónico</source>
+        <target>Email address</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.fallback" datatype="html">
+        <source>Si prefieres, escríbeme directamente a</source>
+        <target>If you prefer, email me directly at</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.sent" datatype="html">
+        <source>Se ha abierto tu cliente de correo con el mensaje listo para enviar.</source>
+        <target>Your email client has opened with the message ready to send.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.error.required" datatype="html">
+        <source>Este campo es obligatorio.</source>
+        <target>This field is required.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.error.maxlength" datatype="html">
+        <source>Has superado la longitud máxima.</source>
+        <target>You have exceeded the maximum length.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.error.email" datatype="html">
+        <source>Introduce una dirección de correo válida.</source>
+        <target>Enter a valid email address.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.error.minlength" datatype="html">
+        <source>El mensaje debe tener al menos <x id="min" equiv-text="LIMITS.messageMin" /> caracteres.</source>
+        <target>The message must be at least <x id="min" equiv-text="LIMITS.messageMin" /> characters long.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="education.pretitle" datatype="html">
+        <source>Educación</source>
+        <target>Education</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/education/education.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="education.title" datatype="html">
+        <source>Lo que he estudiado</source>
+        <target>What I've studied</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/education/education.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experience.pretitle" datatype="html">
+        <source>Experiencia</source>
+        <target>Experience</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/experience/experience.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experience.title" datatype="html">
+        <source>Dónde he trabajado</source>
+        <target>Where I've worked</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/experience/experience.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experience.tags" datatype="html">
+        <source>Tecnologías</source>
+        <target>Technologies</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/experience/experience.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notFound.pretitle" datatype="html">
+        <source>Error 404</source>
+        <target>Error 404</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/not-found/not-found.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notFound.title" datatype="html">
+        <source>Esta página no existe</source>
+        <target>This page doesn't exist</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/not-found/not-found.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notFound.body" datatype="html">
+        <source>Puede que el enlace esté mal escrito o que la página se haya movido.</source>
+        <target>The link may be misspelt, or the page may have moved.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/not-found/not-found.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notFound.back" datatype="html">
+        <source>Volver al inicio</source>
+        <target>Back to home</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/not-found/not-found.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.detail.pretitle" datatype="html">
+        <source>Proyecto</source>
+        <target>Project</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/project-detail/project-detail.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.repo" datatype="html">
+        <source>Código</source>
+        <target>Code</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/project-detail/project-detail.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.demo" datatype="html">
+        <source>Demo</source>
+        <target>Demo</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/project-detail/project-detail.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.tags" datatype="html">
+        <source>Tecnologías</source>
+        <target>Technologies</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/project-detail/project-detail.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.detail.back" datatype="html">
+        <source>Todos los proyectos</source>
+        <target>All projects</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/project-detail/project-detail.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.detail.missing" datatype="html">
+        <source>Este proyecto no existe.</source>
+        <target>This project doesn't exist.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/project-detail/project-detail.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.pretitle" datatype="html">
+        <source>Proyectos</source>
+        <target>Projects</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.title" datatype="html">
+        <source>Lo que he construido</source>
+        <target>What I've built</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.detail" datatype="html">
+        <source>Ver proyecto</source>
+        <target>View project</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/projects/projects.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.backend" datatype="html">
+        <source>Backend</source>
+        <target>Backend</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/skills/skills.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.frontend" datatype="html">
+        <source>Frontend</source>
+        <target>Frontend</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/skills/skills.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.tools" datatype="html">
+        <source>Herramientas</source>
+        <target>Tools</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/skills/skills.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.title" datatype="html">
+        <source>Lo que sé hacer</source>
+        <target>What I can do</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/skills/skills.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.pretitle" datatype="html">
+        <source>Habilidades</source>
+        <target>Skills</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/skills/skills.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.languages" datatype="html">
+        <source>Idiomas</source>
+        <target>Languages</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/skills/skills.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.capabilities" datatype="html">
+        <source>Capacidades</source>
+        <target>Capabilities</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/skills/skills.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.label" datatype="html">
+        <source>Secciones</source>
+        <target>Sections</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/dock/dock.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/sidebar/category-list/category-list.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="locale.label" datatype="html">
+        <source>Idioma</source>
+        <target>Language</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/sidebar/locale-switch/locale-switch.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.profile.download" datatype="html">
+        <source>Descargar CV</source>
+        <target>Download CV</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/sidebar/profile/profile.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.profile.title" datatype="html">
+        <source>Desarrollador Junior Full Stack</source>
+        <target>Junior Full Stack Developer</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/sidebar/profile/profile.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="theme.label" datatype="html">
+        <source>Tema</source>
+        <target>Theme</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/sidebar/theme-switch/theme-switch.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="theme.system" datatype="html">
+        <source>Sistema</source>
+        <target>System</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/sidebar/theme-switch/theme-switch.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="theme.light" datatype="html">
+        <source>Claro</source>
+        <target>Light</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/sidebar/theme-switch/theme-switch.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="theme.dark" datatype="html">
+        <source>Oscuro</source>
+        <target>Dark</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/sidebar/theme-switch/theme-switch.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="carousel.next" datatype="html">
+        <source>Siguiente</source>
+        <target>Next</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/carousel/carousel.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="carousel.previous" datatype="html">
+        <source>Anterior</source>
+        <target>Previous</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/carousel/carousel.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="timeline.present" datatype="html">
+        <source>Actualidad</source>
+        <target>Present</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/timeline-card/timeline-card.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="education.daw.title" datatype="html">
+        <source>Técnico Superior en Desarrollo de Aplicaciones Web</source>
+        <target>Higher Technician in Web Application Development</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/education.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="education.daw.summary" datatype="html">
+        <source>Ciclo de grado superior centrado en Java, bases de datos relacionales y desarrollo web con Angular, con prácticas en empresa en el último tramo.</source>
+        <target>Higher vocational programme focused on Java, relational databases and web development with Angular, with a work placement in the final stretch.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/education.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="education.eoi.title" datatype="html">
+        <source>Curso de Programación Full Stack con Angular y Microservicios</source>
+        <target>Full Stack Programming Course with Angular and Microservices</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/education.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="education.eoi.summary" datatype="html">
+        <source>Curso intensivo de desarrollo full stack: Angular en el frontend y arquitectura de microservicios en el backend.</source>
+        <target>Intensive full stack development course: Angular on the frontend and microservice architecture on the backend.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/education.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experience.convotis.location" datatype="html">
+        <source>Elche, Alicante</source>
+        <target>Elche, Alicante</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/experience.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experience.convotis.title" datatype="html">
+        <source>Desarrollador Web (Prácticas)</source>
+        <target>Web Developer (Internship)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/experience.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experience.convotis.duty1" datatype="html">
+        <source>Desarrollo de aplicaciones web con Angular y TypeScript: componentes, routing, formularios y consumo de APIs REST.</source>
+        <target>Web application development with Angular and TypeScript: components, routing, forms and REST API consumption.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/experience.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experience.convotis.duty2" datatype="html">
+        <source>Implementación y prueba de endpoints REST, validando peticiones y respuestas con Postman.</source>
+        <target>Implementation and testing of REST endpoints, validating requests and responses with Postman.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/experience.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experience.convotis.duty3" datatype="html">
+        <source>Trabajo con control de versiones en Git y seguimiento de las prácticas del equipo de desarrollo.</source>
+        <target>Version control with Git, following the development team's practices.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/experience.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.interests.homelab.title" datatype="html">
+        <source>Homelab</source>
+        <target>Homelab</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/interests.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.interests.homelab.description" datatype="html">
+        <source>Tengo un servidor Linux local donde despliego mis proyectos con Docker.</source>
+        <target>I run a Linux server at home where I deploy my projects with Docker.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/interests.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.interests.writing.title" datatype="html">
+        <source>Escribir</source>
+        <target>Writing</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/interests.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.interests.pokemon.description" datatype="html">
+        <source>Me encanta leer novelas y escribir mis propias historias.</source>
+        <target>I love reading novels and writing my own stories.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/interests.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.interests.ai.title" datatype="html">
+        <source>IA local</source>
+        <target>Local AI</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/interests.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.interests.ai.description" datatype="html">
+        <source>Cacharreo con modelos de IA en local con Ollama.</source>
+        <target>I tinker with AI models running locally through Ollama.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/interests.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.interests.programming.title" datatype="html">
+        <source>Progamación</source>
+        <target>Programming</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/interests.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.interests.languages.description" datatype="html">
+        <source>Siempre estoy estudiando y repasando conceptos de diferentes lenguajes de progamación.</source>
+        <target>I'm always studying and revisiting concepts from different programming languages.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/interests.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.about" datatype="html">
+        <source>Sobre mí</source>
+        <target>About me</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/navigation.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.education" datatype="html">
+        <source>Educación</source>
+        <target>Education</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/navigation.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.experience" datatype="html">
+        <source>Experiencia</source>
+        <target>Experience</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/navigation.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.skills" datatype="html">
+        <source>Habilidades</source>
+        <target>Skills</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/navigation.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.projects" datatype="html">
+        <source>Proyectos</source>
+        <target>Projects</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/navigation.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.homelab" datatype="html">
+        <source>Servidor</source>
+        <target>Server</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/navigation.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.contact" datatype="html">
+        <source>Contacto</source>
+        <target>Contact</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/navigation.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dock.home" datatype="html">
+        <source>Inicio</source>
+        <target>Home</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/navigation.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dock.history" datatype="html">
+        <source>Trayectoria</source>
+        <target>Background</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/navigation.ts</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dock.showcase" datatype="html">
+        <source>Portafolio</source>
+        <target>Portfolio</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/navigation.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dock.more" datatype="html">
+        <source>Más</source>
+        <target>More</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/navigation.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.section.context" datatype="html">
+        <source>Contexto</source>
+        <target>Context</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.section.decisions" datatype="html">
+        <source>Decisiones</source>
+        <target>Decisions</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.section.architecture" datatype="html">
+        <source>Arquitectura</source>
+        <target>Architecture</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.section.hindsight" datatype="html">
+        <source>Qué haría distinto</source>
+        <target>What I'd do differently</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.pokemon-web.summary" datatype="html">
+        <source>Aplicación Angular para construir equipos competitivos de Pokémon, con cálculo de estadísticas en vivo, análisis de cobertura de tipos y una Pokédex completa.</source>
+        <target>Angular application for building competitive Pokémon teams, with live stat calculation, type-coverage analysis and a full Pokédex.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.pokemon-web.context.p1" datatype="html">
+        <source>Montar un equipo competitivo de Pokémon implica cruzar muchos datos: estadísticas base, naturalezas, objetos, movimientos y la cobertura de tipos del conjunto. Quería una herramienta que hiciera ese cálculo al instante, sin salir de la pagina, y que permitiera guardar los equipos en una cuenta.</source>
+        <target>Building a competitive Pokémon team means cross-referencing a lot of data: base stats, natures, items, moves and the type coverage of the whole set. I wanted a tool that did that calculation instantly, without leaving the page, and that let you save teams to an account.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.pokemon-web.architecture.p1" datatype="html">
+        <source>SPA en Angular 21 con componentes standalone y Signals para el estado del constructor de equipos: cada cambio de naturaleza, EV u objeto recalcula las estadísticas de forma derivada, sin suscripciones manuales.</source>
+        <target>An Angular 21 SPA with standalone components and Signals for the team builder's state: every change of nature, EVs or item recalculates the stats as derived values, with no manual subscriptions.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.pokemon-web.architecture.p2" datatype="html">
+        <source>La interfaz combina Tailwind CSS 4 para la maquetación con PrimeNG para los componentes complejos como tablas y selectores. Consume la API propia con sesión JWT y rutas protegidas.</source>
+        <target>The interface combines Tailwind CSS 4 for layout with PrimeNG for complex components such as tables and selectors. It consumes my own API with a JWT session and protected routes.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.pokemon-web.decisions.p1" datatype="html">
+        <source>El análisis de cobertura de tipos se calcula en el cliente a partir del catálogo cacheado, en lugar de pedirlo al servidor: la respuesta es inmediata y la API se mantiene simple.</source>
+        <target>Type-coverage analysis is computed on the client from the cached catalogue instead of asking the server: the response is instant and the API stays simple.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.pokemon-web.hindsight.p1" datatype="html">
+        <source>Recortaría el alcance. Quise cubrir toda la superficie de la API en solitario y con plazo: Pokédex completa, constructor de equipos, equipos públicos y privados, panel de administración y perfil. Salió, pero a costa de construir el módulo de equipos dos veces y abandonando features para una implementación más tardía.</source>
+        <target>I'd cut the scope. I tried to cover the API's whole surface on my own and on a deadline: a full Pokédex, the team builder, public and private teams, an admin panel and a profile. It shipped, but at the cost of building the teams module twice and shelving features for a later implementation.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.pokemon-web.hindsight.p2" datatype="html">
+        <source>Generaría el cliente HTTP a partir de la especificación OpenAPI de la API en lugar de mantener a mano los endpoints y los tipos: cada cambio en el backend suponía volver a escribirlos en el frontend.</source>
+        <target>I'd generate the HTTP client from the API's OpenAPI specification instead of maintaining the endpoints and types by hand: every backend change meant rewriting them on the frontend.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.pokemon-api.summary" datatype="html">
+        <source>API REST en Java 21 y Spring Boot 4 con autenticación JWT, refresh tokens persistidos, límite de peticiones por IP y sincronización con la PokéAPI.</source>
+        <target>REST API in Java 21 and Spring Boot 4 with JWT authentication, persisted refresh tokens, per-IP rate limiting and PokéAPI synchronisation.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.pokemon-api.context.p1" datatype="html">
+        <source>El constructor de equipos necesitaba cuentas de usuario, persistencia de equipos y un catálogo de Pokémon fiable. Eso convertía el backend en el núcleo del proyecto: autenticación, modelo de datos y una fuente de datos que no dependiera de terceros en cada petición.</source>
+        <target>The team builder needed user accounts, team persistence and a reliable Pokémon catalogue. That made the backend the core of the project: authentication, the data model, and a data source that didn't depend on third parties on every request.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.pokemon-api.architecture.p1" datatype="html">
+        <source>API REST con Spring Boot 4 sobre PostgreSQL 17. Spring Security con JWT para la sesión y refresh tokens guardados en base de datos, de forma que se pueden revocar. Correos transaccionales por SMTP para verificación y recuperación de cuenta.</source>
+        <target>A REST API with Spring Boot 4 on PostgreSQL 17. Spring Security with JWT for the session and refresh tokens stored in the database so they can be revoked. Transactional emails over SMTP for account verification and recovery.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.pokemon-api.architecture.p2" datatype="html">
+        <source>El catálogo de Pokémon se sincroniza desde la PokéAPI a tablas propias, así que las consultas de la aplicación nunca salen del servidor. Un panel de administración permite gestionar usuarios y relanzar la sincronización.</source>
+        <target>The Pokémon catalogue is synchronised from the PokéAPI into the API's own tables, so the application's queries never leave the server. An admin panel manages users and re-runs the synchronisation.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.pokemon-api.decisions.p1" datatype="html">
+        <source>Persistir los refresh tokens en vez de usarlos sin estado cuesta una consulta más por renovación, pero permite cerrar sesiones de forma remota. El límite de peticiones por IP en los endpoints de autenticación frena la fuerza bruta sin castigar al resto de la API.</source>
+        <target>Persisting refresh tokens instead of keeping them stateless costs one extra query per renewal, but it makes remote sign-out possible. Per-IP rate limiting on the authentication endpoints stops brute force without penalising the rest of the API.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.pokemon-api.hindsight.p1" datatype="html">
+        <source>Estudiaría la forma de los datos de la PokéAPI más detenidamente antes de diseñar el esquema. El esquema que tenía en mente era demasiado diferente de cómo los datos eran servidos.</source>
+        <target>I'd study the shape of the PokéAPI's data more carefully before designing the schema. The schema I had in mind was too different from how the data was actually served.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.pokemon-api.hindsight.p2" datatype="html">
+        <source>Y escribiría los tests antes de desplegar. Llegaron cuando la API ya llevaba tiempo en producción y me di cuenta de que necesitaba los tests.</source>
+        <target>And I'd write the tests before deploying. They arrived once the API had already been in production for a while and I realised I needed them.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.necobot.summary" datatype="html">
+        <source>Bot de Discord en TypeScript con economía de puntos, minijuegos y respuestas con personaje propio generadas por un modelo de lenguaje alojado en local.</source>
+        <target>Discord bot in TypeScript with a points economy, minigames and in-character replies generated by a locally hosted language model.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.necobot.context.p1" datatype="html">
+        <source>Un bot para un servidor de Discord con amigos: sistema de puntos, minijuegos y un personaje que responde a las menciones. La parte interesante era conseguir que las respuestas tuvieran personalidad sin pagar por una API externa.</source>
+        <target>A bot for a Discord server with friends: a points system, minigames and a character that replies to mentions. The interesting part was giving the replies personality without paying for an external API.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.necobot.architecture.p1" datatype="html">
+        <source>TypeScript sobre el framework Sapphire, que organiza comandos, listeners y precondiciones. Persistencia en SQLite con Drizzle y migraciones versionadas. Las respuestas del personaje las genera un modelo local a través de Ollama, con tareas programadas para los eventos periódicos.</source>
+        <target>TypeScript on the Sapphire framework, which organises commands, listeners and preconditions. Persistence in SQLite with Drizzle and versioned migrations. The character's replies are generated by a local model through Ollama, with scheduled tasks for periodic events.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.necobot.architecture.p2" datatype="html">
+        <source>Integración continua con GitHub Actions y despliegue en un contenedor Docker en mi propio servidor.</source>
+        <target>Continuous integration with GitHub Actions and deployment as a Docker container on my own server.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.necobot.decisions.p1" datatype="html">
+        <source>SQLite en vez de PostgreSQL: un bot con un puñado de usuarios no justifica un servidor de base de datos, y un archivo único simplifica las copias de seguridad. El modelo local añade latencia frente a una API en la nube, pero elimina el coste por mensaje y mantiene las conversaciones en casa.</source>
+        <target>SQLite instead of PostgreSQL: a bot with a handful of users doesn't justify a database server, and a single file makes backups trivial. The local model adds latency compared with a cloud API, but it removes the per-message cost and keeps the conversations at home.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.necobot.hindsight.p1" datatype="html">
+        <source>Investigaría los modelos antes de construir alrededor de uno. Cambié de modelo seis veces en dos meses: de Qwen 2.5 a Qwen 3, a Salamandra 2B y 7B, de vuelta a 2B porque el 7B se comía el servidor, y otra vez a Qwen tras probar en serio las opciones. Cada cambio movía el tono, la longitud y el coste de las respuestas. Medir primero calidad y consumo en mi hardware habría fijado la elección en una tarde.</source>
+        <target>I'd research the models before building around one. I switched models six times in two months: from Qwen 2.5 to Qwen 3, to Salamandra 2B and 7B, back to 2B because the 7B ate the server, and back to Qwen after properly testing the options. Every switch shifted the tone, length and cost of the replies. Measuring quality and resource usage on my own hardware first would have settled the choice in an afternoon.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.homelab.summary" datatype="html">
+        <source>Servidor Linux en casa que aloja mis proyectos con Docker Compose, expuesto a internet mediante Cloudflare Tunnel sin abrir puertos.</source>
+        <target>Linux server at home that hosts my projects with Docker Compose, exposed to the internet through Cloudflare Tunnel without opening ports.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.homelab.context.p1" datatype="html">
+        <source>Quería desplegar mis proyectos de verdad, no solo en local, y aprender lo que hay entre el código y el usuario: sistema operativo, contenedores, red, certificados y copias de seguridad.</source>
+        <target>I wanted to deploy my projects for real, not just locally, and to learn what sits between the code and the user: operating system, containers, networking, certificates and backups.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.homelab.architecture.p1" datatype="html">
+        <source>Un servidor Linux con Docker Compose, un archivo por servicio. PostgreSQL compartido entre proyectos con una base de datos por aplicación, y Ollama para los modelos de lenguaje. Cloudflare Tunnel publica los servicios bajo mis dominios sin abrir puertos en el router.</source>
+        <target>A Linux server with Docker Compose, one file per service. PostgreSQL shared across projects with one database per application, and Ollama for the language models. Cloudflare Tunnel publishes the services under my domains without opening ports on the router.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">138</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.homelab.decisions.p1" datatype="html">
+        <source>Cloudflare Tunnel frente a un proxy inverso expuesto: pierdo algo de control, pero gano TLS gestionado y ninguna superficie de ataque directa sobre mi red doméstica. Un único PostgreSQL en lugar de uno por proyecto reduce el consumo de memoria en una máquina pequeña.</source>
+        <target>Cloudflare Tunnel over an exposed reverse proxy: I give up some control, but I get managed TLS and no direct attack surface on my home network. A single PostgreSQL instead of one per project keeps memory usage down on a small machine.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.homelab.hindsight.p1" datatype="html">
+        <source>Automatizaría las copias de seguridad y la monitorización desde el primer servicio.</source>
+        <target>I'd automate backups and monitoring from the very first service.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.portfolio.summary" datatype="html">
+        <source>El sitio que estás viendo: Angular 21 sin zone.js, prerenderizado en el build, con tema claro y oscuro e internacionalización, servido como estático desde Cloudflare.</source>
+        <target>The site you're looking at: Angular 21 without zone.js, prerendered at build time, with light and dark themes and internationalisation, served as static files from Cloudflare.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">159</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.portfolio.context.p1" datatype="html">
+        <source>Un portfolio debería cargar al instante, leerse sin JavaScript y sobrevivir a que mi servidor de casa esté apagado. Esas tres condiciones descartaban una SPA normal y marcaron el resto de decisiones.</source>
+        <target>A portfolio should load instantly, be readable without JavaScript and survive my home server being switched off. Those three conditions ruled out a regular SPA and shaped every other decision.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">165</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.portfolio.architecture.p1" datatype="html">
+        <source>Angular 21 en modo zoneless con Signals, y todas las rutas prerenderizadas en el build a HTML estático que Cloudflare sirve desde su red. Tailwind CSS 4 con tokens de diseño para los dos temas, e i18n nativo de Angular con el español como idioma base.</source>
+        <target>Angular 21 in zoneless mode with Signals, and every route prerendered at build time to static HTML that Cloudflare serves from its network. Tailwind CSS 4 with design tokens for both themes, and Angular's native i18n with Spanish as the source language.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">171</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.portfolio.decisions.p1" datatype="html">
+        <source>El contenido vive en constantes tipadas con TypeScript en vez de en Markdown: se extrae para traducir con las mismas herramientas que el resto de la interfaz y el compilador detecta cualquier campo que falte. El tema se aplica con un script previo al arranque para evitar el parpadeo al cargar.</source>
+        <target>The content lives in typed TypeScript constants rather than Markdown: it's extracted for translation with the same tools as the rest of the interface, and the compiler catches any missing field. The theme is applied by a pre-boot script to avoid a flash on load.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">177</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.portfolio.hindsight.p1" datatype="html">
+        <source>Habría fijado antes la escala tipográfica y las reglas de jerarquía. Varias secciones se rediseñaron después de recibir feedback que una guía de estilo temprana habría evitado.</source>
+        <target>I'd have fixed the type scale and the hierarchy rules earlier. Several sections were redesigned after feedback that an early style guide would have prevented.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">183</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.api.name" datatype="html">
+        <source>APIs REST</source>
+        <target>REST APIs</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/skills.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.api.summary" datatype="html">
+        <source>Diseño y construyo servicios REST con Spring Boot, con validación, paginación y documentación.</source>
+        <target>I design and build REST services with Spring Boot, with validation, pagination and documentation.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/skills.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.database.name" datatype="html">
+        <source>Bases de datos</source>
+        <target>Databases</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/skills.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.database.summary" datatype="html">
+        <source>Modelo esquemas relacionales, escribo SQL y gestiono migraciones versionadas.</source>
+        <target>I model relational schemas, write SQL and manage versioned migrations.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/skills.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.auth.name" datatype="html">
+        <source>Autenticación</source>
+        <target>Authentication</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/skills.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.auth.summary" datatype="html">
+        <source>Sistemas de registro y sesión con Spring Security y JWT, incluyendo rutas protegidas en el frontend.</source>
+        <target>Sign-up and session systems with Spring Security and JWT, including protected routes on the frontend.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/skills.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.design.name" datatype="html">
+        <source>Interfaces web</source>
+        <target>Web interfaces</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/skills.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.design.summary" datatype="html">
+        <source>Interfaces responsivas y accesibles con Angular y Tailwind, con tema claro y oscuro.</source>
+        <target>Responsive, accessible interfaces with Angular and Tailwind, with light and dark themes.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/skills.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.deploy.name" datatype="html">
+        <source>Despliegue</source>
+        <target>Deployment</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/skills.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.deploy.summary" datatype="html">
+        <source>Contenedores Docker, CI con GitHub Actions y despliegue en servidor Linux propio.</source>
+        <target>Docker containers, CI with GitHub Actions and deployment on my own Linux server.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/skills.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.languages.spanish.name" datatype="html">
+        <source>Español</source>
+        <target>Spanish</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/skills.ts</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.languages.spanish.level" datatype="html">
+        <source>Lengua materna</source>
+        <target>Native</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/skills.ts</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.languages.spanish.summary" datatype="html">
+        <source>Comunicación oral y escrita a nivel profesional.</source>
+        <target>Professional-level spoken and written communication.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/skills.ts</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.languages.english.name" datatype="html">
+        <source>Inglés</source>
+        <target>English</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/skills.ts</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.languages.english.level" datatype="html">
+        <source>C1 certificado (EF SET)</source>
+        <target>C1 certified (EF SET)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/skills.ts</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.languages.english.summary" datatype="html">
+        <source>Conversación y escritura fluidas; cómodo en entornos de trabajo en inglés.</source>
+        <target>Fluent conversation and writing; comfortable working in English.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/skills.ts</context>
+          <context context-type="linenumber">128</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.languages.valencian.name" datatype="html">
+        <source>Valenciano</source>
+        <target>Valencian</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/skills.ts</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.languages.valencian.level" datatype="html">
+        <source>A2</source>
+        <target>A2</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/skills.ts</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.languages.valencian.summary" datatype="html">
+        <source>Nivel básico.</source>
+        <target>Basic level.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/skills.ts</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
