@@ -6,6 +6,7 @@
     "start:en": "ng serve --configuration=en",
     "build": "ng build",
     "postbuild": "node scripts/postbuild.mjs",
+    "deploy": "npm run build && wrangler deploy",
     "test": "ng test",
     "lint": "ng lint",
     "format": "prettier --write .",

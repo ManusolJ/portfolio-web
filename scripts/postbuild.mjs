@@ -34,15 +34,17 @@ function collectInlineScripts(html) {
   }
 }
 
+function routeOf(page) {
+  return relative(OUTPUT, page)
+    .replaceAll('\\', '/')
+    .replace(/index\.html$/, '');
+}
+
 function sitemap() {
   const urls = pages
-    .map((page) =>
-      relative(OUTPUT, page)
-        .replaceAll('\\', '/')
-        .replace(/index\.html$/, ''),
-    )
+    .map(routeOf)
     .sort()
-    .map((path) => `  <url><loc>${SITE_URL}/${path}</loc></url>`)
+    .map((route) => `  <url><loc>${SITE_URL}/${route}</loc></url>`)
     .join('\n');
 
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
@@ -80,8 +82,9 @@ function headers() {
 /*/media/*
   Cache-Control: public, max-age=31536000, immutable
 
-/*.html
-  Cache-Control: no-cache
+${['/', '/404.html', ...pages.map((page) => `/${routeOf(page)}`)]
+  .map((route) => `${route}\n  Cache-Control: no-cache`)
+  .join('\n\n')}
 `;
 }
 
