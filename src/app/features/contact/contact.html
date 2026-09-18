@@ -1,0 +1,124 @@
+<app-title-card [icon]="icon" [pretitle]="pretitle" [title]="title" />
+
+<p class="text-muted mt-4 max-w-prose leading-relaxed">{{ intro }}</p>
+
+<form class="mt-8 max-w-2xl" novalidate [formGroup]="form" (ngSubmit)="submit()">
+  <div class="grid gap-5 sm:grid-cols-2">
+    @let nameControl = form.controls.name;
+    @let nameError = errorOf(nameControl);
+    <div class="flex flex-col gap-1.5">
+      <label for="contact-name" class="text-sm font-medium">{{ labels.name }}</label>
+      <input
+        id="contact-name"
+        type="text"
+        autocomplete="name"
+        formControlName="name"
+        class="bg-bg border-line focus-visible:outline-accent aria-invalid:border-danger w-full rounded-lg border px-3 py-2.5 text-base transition-colors focus-visible:outline-2 focus-visible:outline-offset-2"
+        [maxlength]="limits.nameMax"
+        [attr.aria-invalid]="nameError ? true : null"
+        [attr.aria-describedby]="nameError ? 'contact-name-error' : null"
+      />
+      @if (nameError) {
+        <p id="contact-name-error" class="text-danger text-sm">{{ nameError }}</p>
+      }
+    </div>
+
+    @let emailControl = form.controls.email;
+    @let emailError = errorOf(emailControl);
+    <div class="flex flex-col gap-1.5">
+      <label for="contact-email" class="text-sm font-medium">{{ labels.email }}</label>
+      <input
+        id="contact-email"
+        type="email"
+        inputmode="email"
+        autocomplete="email"
+        formControlName="email"
+        class="bg-bg border-line focus-visible:outline-accent aria-invalid:border-danger w-full rounded-lg border px-3 py-2.5 text-base transition-colors focus-visible:outline-2 focus-visible:outline-offset-2"
+        [maxlength]="limits.emailMax"
+        [attr.aria-invalid]="emailError ? true : null"
+        [attr.aria-describedby]="emailError ? 'contact-email-error' : null"
+      />
+      @if (emailError) {
+        <p id="contact-email-error" class="text-danger text-sm">{{ emailError }}</p>
+      }
+    </div>
+
+    @let subjectControl = form.controls.subject;
+    @let subjectError = errorOf(subjectControl);
+    <div class="flex flex-col gap-1.5 sm:col-span-2">
+      <label for="contact-subject" class="text-sm font-medium">{{ labels.subject }}</label>
+      <input
+        id="contact-subject"
+        type="text"
+        autocomplete="off"
+        formControlName="subject"
+        class="bg-bg border-line focus-visible:outline-accent aria-invalid:border-danger w-full rounded-lg border px-3 py-2.5 text-base transition-colors focus-visible:outline-2 focus-visible:outline-offset-2"
+        [maxlength]="limits.subjectMax"
+        [attr.aria-invalid]="subjectError ? true : null"
+        [attr.aria-describedby]="subjectError ? 'contact-subject-error' : null"
+      />
+      @if (subjectError) {
+        <p id="contact-subject-error" class="text-danger text-sm">{{ subjectError }}</p>
+      }
+    </div>
+
+    @let messageControl = form.controls.message;
+    @let messageError = errorOf(messageControl);
+    <div class="flex flex-col gap-1.5 sm:col-span-2">
+      <div class="flex items-baseline justify-between">
+        <label for="contact-message" class="text-sm font-medium">{{ labels.message }}</label>
+        <span class="text-muted text-xs tabular-nums">
+          {{ messageControl.value.length }} / {{ limits.messageMax }}
+        </span>
+      </div>
+      <textarea
+        id="contact-message"
+        rows="6"
+        formControlName="message"
+        class="bg-bg border-line focus-visible:outline-accent aria-invalid:border-danger min-h-40 w-full resize-y rounded-lg border px-3 py-2.5 text-base leading-relaxed transition-colors focus-visible:outline-2 focus-visible:outline-offset-2"
+        [maxlength]="limits.messageMax"
+        [attr.aria-invalid]="messageError ? true : null"
+        [attr.aria-describedby]="messageError ? 'contact-message-error' : null"
+      ></textarea>
+      @if (messageError) {
+        <p id="contact-message-error" class="text-danger text-sm">{{ messageError }}</p>
+      }
+    </div>
+
+    <div class="absolute left-[-9999px] h-0 w-0 overflow-hidden" aria-hidden="true">
+      <label for="contact-website">Website</label>
+      <input
+        id="contact-website"
+        type="text"
+        tabindex="-1"
+        autocomplete="off"
+        formControlName="website"
+      />
+    </div>
+  </div>
+
+  <div class="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+    <button
+      type="submit"
+      class="bg-accent text-bg hover:bg-accent/85 focus-visible:outline-accent inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg border-0 px-5 py-2.5 font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2"
+    >
+      <ng-icon [svg]="sendIcon" size="18" class="shrink-0" />
+      {{ labels.send }}
+    </button>
+    <p class="text-muted text-sm">
+      {{ labels.fallback }}
+      <a
+        [href]="'mailto:' + contactEmail"
+        class="text-content hover:text-accent focus-visible:outline-accent rounded font-medium no-underline transition-colors hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
+      >
+        {{ contactEmail }}
+      </a>
+    </p>
+  </div>
+
+  @if (submitted()) {
+    <p role="status" class="bg-accent/10 text-accent mt-6 rounded-lg px-4 py-3 text-sm font-medium">
+      {{ labels.sent }}
+    </p>
+  }
+</form>
