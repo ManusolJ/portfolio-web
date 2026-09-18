@@ -5,6 +5,7 @@
   "compatibility_flags": ["nodejs_compat"],
 
   "workers_dev": false,
+  "routes": [{ "pattern": "manusoler.dev", "custom_domain": true }],
   "preview_urls": false,
 
   "observability": {
