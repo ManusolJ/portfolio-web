@@ -46,9 +46,7 @@
     </div>
   }
 
-  @if (project.video) {
-    <video class="mt-8 w-full rounded-lg" controls preload="none" [src]="project.video"></video>
-  }
+  <!-- TODO: Add here the video when available -->
 
   @for (section of project.sections; track $index) {
     <section class="mt-8">
