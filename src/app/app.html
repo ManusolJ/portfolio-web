@@ -5,9 +5,9 @@
   {{ skipLabel }}
 </a>
 <main
-  class="grid grid-cols-1 gap-6 px-4 pt-4 pb-24 lg:h-full lg:grid-cols-[24rem_1fr] lg:gap-8 lg:px-12 lg:py-10"
+  class="grid grid-cols-1 gap-6 px-4 pt-4 pb-24 lg:min-h-full lg:grid-cols-[24rem_1fr] lg:gap-8 lg:px-12 lg:py-10"
 >
-  <app-sidebar class="lg:h-full" />
-  <app-panel id="content" tabindex="-1" class="outline-none lg:h-full" />
+  <app-sidebar class="lg:sticky lg:top-10 lg:h-[calc(100vh-5rem)]" />
+  <app-panel id="content" tabindex="-1" class="outline-none" />
 </main>
 <app-dock />

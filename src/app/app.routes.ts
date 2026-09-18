@@ -22,6 +22,11 @@ export const routes: Routes = [
     loadComponent: () => import('@features/projects/projects').then((m) => m.Projects),
   },
   {
+    path: 'projects/:slug',
+    loadComponent: () =>
+      import('@features/project-detail/project-detail').then((m) => m.ProjectDetail),
+  },
+  {
     path: 'homelab',
     loadComponent: () => import('@features/server/server').then((m) => m.Server),
   },
