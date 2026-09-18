@@ -6,7 +6,7 @@
         [routerLink]="item.route"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
-        [routerLinkActiveOptions]="{ exact: true }"
+        [routerLinkActiveOptions]="{ exact: item.route === '/' }"
       >
         {{ item.category }}
       </a>

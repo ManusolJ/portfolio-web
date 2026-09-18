@@ -1,0 +1,63 @@
+<a
+  routerLink="/projects"
+  class="text-muted hover:text-accent focus-visible:outline-accent inline-flex items-center gap-1.5 rounded text-sm no-underline transition-colors hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
+>
+  <ng-icon [svg]="icons.back" size="16" class="shrink-0" />
+  {{ backLabel }}
+</a>
+
+@if (project(); as project) {
+  <app-title-card class="mt-6" [icon]="icons.grid" [pretitle]="pretitle" [title]="project.name" />
+
+  <p class="text-muted mt-4 max-w-prose leading-relaxed">{{ project.summary }}</p>
+
+  <ul class="mt-4 flex flex-wrap gap-2" [attr.aria-label]="tagsLabel">
+    @for (tag of project.tags; track tag) {
+      <li class="border-line text-muted rounded-full border px-2.5 py-0.5 text-xs font-medium">
+        {{ tag }}
+      </li>
+    }
+  </ul>
+
+  @if (project.repo || project.demo) {
+    <div class="border-line mt-6 flex flex-wrap gap-3 border-b pb-6">
+      @if (project.repo) {
+        <a
+          target="_blank"
+          [href]="project.repo"
+          rel="noopener noreferrer"
+          class="border-line text-content hover:border-accent hover:text-accent focus-visible:outline-accent inline-flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-medium no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2"
+        >
+          <ng-icon [svg]="icons.github" size="16" class="shrink-0" />
+          {{ repoLabel }}
+        </a>
+      }
+      @if (project.demo) {
+        <a
+          target="_blank"
+          [href]="project.demo"
+          rel="noopener noreferrer"
+          class="bg-accent text-bg hover:bg-accent/85 focus-visible:outline-accent inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2"
+        >
+          <ng-icon [svg]="icons.external" size="16" class="shrink-0" />
+          {{ demoLabel }}
+        </a>
+      }
+    </div>
+  }
+
+  @if (project.video) {
+    <video class="mt-8 w-full rounded-lg" controls preload="none" [src]="project.video"></video>
+  }
+
+  @for (section of project.sections; track $index) {
+    <section class="mt-8">
+      <h2 class="text-xl font-bold">{{ section.title }}</h2>
+      @for (paragraph of section.paragraphs; track $index) {
+        <p class="text-muted mt-3 max-w-prose leading-relaxed">{{ paragraph }}</p>
+      }
+    </section>
+  }
+} @else {
+  <p class="text-muted mt-6">{{ missing }}</p>
+}

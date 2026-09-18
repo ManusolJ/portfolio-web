@@ -85,7 +85,9 @@ export const DOCK_TABS: readonly DockTab[] = [
 ];
 
 export function groupOf(url: string): NavGroup | undefined {
-  return CATEGORY_LIST.find((category) => category.route === url)?.group;
+  return CATEGORY_LIST.find(
+    ({ route }) => route === url || (route !== '/' && url.startsWith(`${route}/`)),
+  )?.group;
 }
 
 export function routesIn(group: NavGroup): readonly Category[] {
