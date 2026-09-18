@@ -1,0 +1,11 @@
+<app-title-card [icon]="icon" [pretitle]="pretitle" [title]="title" />
+
+<p class="text-muted mt-4 max-w-prose leading-relaxed">{{ body }}</p>
+
+<a
+  routerLink="/"
+  class="text-accent focus-visible:outline-accent mt-6 inline-flex items-center gap-1.5 rounded font-semibold no-underline hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
+>
+  <ng-icon [svg]="backIcon" size="16" class="shrink-0" />
+  {{ back }}
+</a>
