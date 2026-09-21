@@ -18,7 +18,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version-file: .node-version
           cache: npm
 
       - name: Install
@@ -26,6 +26,9 @@ jobs:
 
       - name: Lint
         run: npm run lint
+
+      - name: Type-check worker
+        run: npm run check:worker
 
       - name: Format check
         run: npm run format:check
