@@ -1,8 +1,9 @@
-import { StatusRecord } from './status-record';
+import type { StatusRecord } from './status-record';
 
 const STATUS_KEY = 'status';
-const PROBE_TIMEOUT_MS = 5000;
+const POLL_TIMEOUT_MS = 5000;
 const STATUS_PATH = '/api/status';
+const EMPTY_RECORD = JSON.stringify({ reachable: false });
 const RESPONSE_HEADERS = {
   'content-type': 'application/json; charset=utf-8',
   'cache-control': 'public, max-age=60',
@@ -11,7 +12,16 @@ const RESPONSE_HEADERS = {
 
 export default {
   async scheduled(_controller, env) {
-    await probe(env);
+    const previous = await env.STATUS.get<StatusRecord>(STATUS_KEY, 'json');
+    let record: StatusRecord;
+
+    try {
+      record = markReachable(await poll(env.API_URL));
+    } catch {
+      record = markUnreachable(previous);
+    }
+
+    await env.STATUS.put(STATUS_KEY, JSON.stringify(record));
   },
 
   async fetch(request, env) {
@@ -27,36 +37,30 @@ export default {
 
     const record = await env.STATUS.get(STATUS_KEY);
 
-    return new Response(record ?? JSON.stringify({ reachable: false }), {
-      headers: RESPONSE_HEADERS,
-    });
+    return new Response(record ?? EMPTY_RECORD, { headers: RESPONSE_HEADERS });
   },
 } satisfies ExportedHandler<Env>;
 
-async function probe(env: Env): Promise<void> {
-  const previous = await env.STATUS.get<StatusRecord>(STATUS_KEY, 'json');
-  const now = new Date().toISOString();
+async function poll(apiUrl: string): Promise<unknown> {
+  const response = await fetch(`${apiUrl}/api/v1/status`, {
+    headers: { accept: 'application/json' },
+    signal: AbortSignal.timeout(POLL_TIMEOUT_MS),
+  });
 
-  try {
-    const response = await fetch(`${env.API_URL}/api/v1/status`, {
-      headers: { accept: 'application/json' },
-      signal: AbortSignal.timeout(PROBE_TIMEOUT_MS),
-    });
-
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
-    }
-
-    const record: StatusRecord = { reachable: true, fetchedAt: now, data: await response.json() };
-
-    await env.STATUS.put(STATUS_KEY, JSON.stringify(record));
-  } catch {
-    const record: StatusRecord = {
-      ...previous,
-      reachable: false,
-      unreachableSince: previous?.reachable === false ? previous.unreachableSince : now,
-    };
-
-    await env.STATUS.put(STATUS_KEY, JSON.stringify(record));
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}`);
   }
+
+  return response.json();
+}
+
+function markReachable(data: unknown): StatusRecord {
+  return { reachable: true, fetchedAt: new Date().toISOString(), data };
+}
+
+function markUnreachable(previous: StatusRecord | null): StatusRecord {
+  const unreachableSince =
+    previous?.reachable === false ? previous.unreachableSince : new Date().toISOString();
+
+  return { ...previous, reachable: false, unreachableSince };
 }
