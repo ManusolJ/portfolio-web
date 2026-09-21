@@ -2,10 +2,11 @@
   "name": "portfolio-web",
   "version": "0.0.0",
   "scripts": {
-    "start": "ng serve",
-    "start:en": "ng serve --configuration=en",
+    "start": "ng serve --proxy-config proxy.conf.json",
+    "start:en": "ng serve --configuration=en --proxy-config proxy.conf.json",
     "build": "ng build",
     "postbuild": "node scripts/postbuild.mjs",
+    "check:worker": "wrangler types worker/worker-configuration.d.ts && tsc -p worker",
     "deploy": "npm run build && wrangler deploy",
     "test": "ng test",
     "lint": "ng lint",

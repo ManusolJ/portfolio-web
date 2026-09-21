@@ -4,6 +4,7 @@ const tseslint = require('typescript-eslint');
 const perfectionist = require('eslint-plugin-perfectionist');
 
 module.exports = tseslint.config(
+  { ignores: ['worker/worker-configuration.d.ts'] },
   {
     files: ['**/*.ts'],
     extends: [
