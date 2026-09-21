@@ -39,6 +39,9 @@ Thumbs.db
 # Cloudflare / wrangler
 .dev.vars
 .wrangler/
+worker/worker-configuration.d.ts
 
 docs/
 .*
+!.node-version
+
