@@ -43,5 +43,6 @@ worker/worker-configuration.d.ts
 
 docs/
 .*
+!.github
 !.node-version
 
