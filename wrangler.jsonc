@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "portfolio-web",
+  "main": "worker/index.ts",
   "compatibility_date": "2026-09-05",
   "compatibility_flags": ["nodejs_compat"],
 
@@ -15,5 +16,16 @@
   "assets": {
     "directory": "dist/portfolio-web/browser/",
     "not_found_handling": "404-page",
+    "binding": "ASSETS",
+  },
+
+  "kv_namespaces": [{ "binding": "STATUS", "id": "7ba55bf2c6514119ac8c4ef2fcf1a4f7" }],
+
+  "triggers": {
+    "crons": ["*/5 * * * *"],
+  },
+
+  "vars": {
+    "API_URL": "https://api.manusoler.dev",
   },
 }
