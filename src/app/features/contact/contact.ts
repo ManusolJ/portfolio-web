@@ -5,6 +5,8 @@ import { lucideMail, lucideSend } from '@ng-icons/lucide';
 import { inject, signal, Component, ChangeDetectionStrategy } from '@angular/core';
 import { Validators, ReactiveFormsModule, NonNullableFormBuilder } from '@angular/forms';
 
+import { ContactService } from '@core/services/contact';
+
 import { CONTACT_EMAIL } from '@shared/constants/contact';
 import { TitleCard } from '@shared/components/title-card/title-card';
 
@@ -23,6 +25,7 @@ const LIMITS = {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Contact {
+  private readonly contactService = inject(ContactService);
   private readonly formBuilder = inject(NonNullableFormBuilder);
 
   protected readonly limits = LIMITS;
@@ -84,14 +87,13 @@ export class Contact {
       return;
     }
 
-    const { website, ...message } = this.form.getRawValue();
-    if (website) {
-      this.submitted.set(true);
-      return;
-    }
+    const { ...message } = this.form.getRawValue();
 
-    const body = `${message.message}\n\n${message.name} <${message.email}>`;
-    this.submitted.set(true);
-    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(message.subject)}&body=${encodeURIComponent(body)}`;
+    this.contactService.sendMessage({
+      name: message.name,
+      email: message.email,
+      subject: message.subject,
+      message: message.message,
+    });
   }
 }
