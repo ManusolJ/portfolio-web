@@ -7,7 +7,7 @@ import { environment } from '@env/environment';
 
 import type { ContactMessage } from '@shared/models/contact-message';
 
-const API_URL = environment.apiUrl + '/api/v1/contact';
+const API_URL = environment.apiUrl + 'contact';
 
 @Injectable({ providedIn: 'root' })
 export class ContactSender {
