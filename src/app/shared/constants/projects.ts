@@ -154,7 +154,7 @@ export const PROJECTS: readonly Project[] = [
   },
   {
     slug: 'portfolio',
-    name: 'Este portfolio',
+    name: $localize`:@@projects.portfolio.name:Este Portfolio`,
     repo: 'https://github.com/ManusolJ/portfolio-web',
     summary: $localize`:@@projects.portfolio.summary:El sitio que estás viendo: Angular 21 sin zone.js, prerenderizado en el build, con tema claro y oscuro e internacionalización, servido como estático desde Cloudflare.`,
     tags: ['Angular 21', 'Tailwind CSS 4', 'Prerender', 'i18n', 'Cloudflare'],
