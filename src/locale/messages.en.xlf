@@ -1145,6 +1145,27 @@
           <context context-type="linenumber">134</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="server.pretitle" datatype="html">
+        <source>Servidor</source>
+        <target>Server</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="server.title" datatype="html">
+        <source>Lo que he desplegado</source>
+        <target>What I have deployed</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>      
+      <trans-unit id="server.placeholder" datatype="html">
+        <source>¡Esta función llegará más adelante, cuando el backend esté listo!</source>
+        <target>This feature will come later when the backend is ready!</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
