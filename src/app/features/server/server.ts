@@ -1,6 +1,7 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { NgIcon } from '@ng-icons/core';
-import { lucideAlertTriangle, lucideServer } from '@ng-icons/lucide';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { lucideServer, lucideAlertTriangle } from '@ng-icons/lucide';
+
 import { TitleCard } from '@shared/components/title-card/title-card';
 
 @Component({
