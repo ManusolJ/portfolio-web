@@ -129,7 +129,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="about.title" datatype="html">
-        <source>Desarrollador full stack junior</source>
+        <source>Desarrollador Full Stack Junior</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/about/about.ts</context>
           <context context-type="linenumber">28</context>
@@ -439,6 +439,20 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/projects/projects.ts</context>
           <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4340807736935009609" datatype="html">
+        <source>Servidor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="819500171708690800" datatype="html">
+        <source>Lo que he desplegado</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">15</context>
         </context-group>
       </trans-unit>
       <trans-unit id="skills.backend" datatype="html">
@@ -968,6 +982,13 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
           <context context-type="linenumber">150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.portfolio.name" datatype="html">
+        <source>Este Portfolio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">157</context>
         </context-group>
       </trans-unit>
       <trans-unit id="projects.portfolio.summary" datatype="html">

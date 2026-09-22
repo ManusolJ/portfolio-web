@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="seo.about.title" datatype="html">
         <source>Desarrollador full stack junior</source>
-        <target>Junior full stack developer</target><context-group purpose="location">
+        <target>Junior Full Stack Developer</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/app.routes.ts</context>
           <context context-type="linenumber">14</context>
         </context-group>
@@ -968,6 +968,13 @@
         <target>I'd automate backups and monitoring from the very first service.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
           <context context-type="linenumber">150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit  id="projects.portfolio.name" datatype="html">
+        <source>Este Portfolio</source>
+          <target>This Portfolio</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">157</context>
         </context-group>
       </trans-unit>
       <trans-unit id="projects.portfolio.summary" datatype="html">
