@@ -25,7 +25,7 @@ export class About {
   };
 
   protected readonly pretitle = $localize`:@@about.pretitle:Hola, soy Manuel`;
-  protected readonly title = $localize`:@@about.title:Desarrollador full stack junior`;
+  protected readonly title = $localize`:@@about.title:Desarrollador Full Stack Junior`;
 
   protected readonly contactLabel = $localize`:@@about.contact.label:Contacto`;
 
