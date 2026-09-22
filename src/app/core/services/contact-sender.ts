@@ -3,8 +3,9 @@ import type { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 
-import type { ContactMessage } from '@shared/models/contact-message';
 import { environment } from '@env/environment';
+
+import type { ContactMessage } from '@shared/models/contact-message';
 
 const API_URL = environment.apiUrl + '/api/v1/contact';
 
