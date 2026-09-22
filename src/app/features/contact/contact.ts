@@ -6,7 +6,7 @@ import { lucideMail, lucideSend } from '@ng-icons/lucide';
 import { inject, signal, Component, ChangeDetectionStrategy } from '@angular/core';
 import { Validators, ReactiveFormsModule, NonNullableFormBuilder } from '@angular/forms';
 
-import { ContactService } from '@core/services/contact';
+import { ContactSender } from '@core/services/contact-sender';
 
 import { CONTACT_EMAIL } from '@shared/constants/contact';
 import { TitleCard } from '@shared/components/title-card/title-card';
@@ -26,7 +26,7 @@ const LIMITS = {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Contact {
-  private readonly contactService = inject(ContactService);
+  private readonly contactService = inject(ContactSender);
   private readonly formBuilder = inject(NonNullableFormBuilder);
 
   protected readonly limits = LIMITS;

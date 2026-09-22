@@ -4,11 +4,12 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 
 import type { ContactMessage } from '@shared/models/contact-message';
+import { environment } from '@env/environment';
 
-const API_URL = 'https://api.manusoler.dev/api/v1/contact';
+const API_URL = environment.apiUrl + '/api/v1/contact';
 
 @Injectable({ providedIn: 'root' })
-export class ContactService {
+export class ContactSender {
   private readonly http = inject(HttpClient);
 
   sendMessage(request: ContactMessage): Observable<void> {
