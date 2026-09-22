@@ -58,7 +58,7 @@ function headers() {
     "style-src 'self' 'unsafe-inline'",
     "img-src 'self' data:",
     "font-src 'self'",
-    "connect-src 'self'",
+    "connect-src 'self' https://api.manusoler.dev",
     "frame-ancestors 'none'",
     "form-action 'self'",
     "base-uri 'self'",
