@@ -100,10 +100,11 @@
   <div class="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
     <button
       type="submit"
-      class="bg-accent text-bg hover:bg-accent/85 focus-visible:outline-accent inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg border-0 px-5 py-2.5 font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2"
+      class="bg-accent text-bg hover:bg-accent/85 focus-visible:outline-accent inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg border-0 px-5 py-2.5 font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-not-allowed disabled:opacity-60"
+      [disabled]="sending()"
     >
       <ng-icon [svg]="sendIcon" size="18" class="shrink-0" />
-      {{ labels.send }}
+      {{ sending() ? labels.sending : labels.send }}
     </button>
     <p class="text-muted text-sm">
       {{ labels.fallback }}
@@ -116,7 +117,12 @@
     </p>
   </div>
 
-  @if (submitted()) {
+  @let failureMessage = failure();
+  @if (failureMessage) {
+    <p role="alert" class="bg-danger/10 text-danger mt-6 rounded-lg px-4 py-3 text-sm font-medium">
+      {{ failureMessage }}
+    </p>
+  } @else if (submitted()) {
     <p role="status" class="bg-accent/10 text-accent mt-6 rounded-lg px-4 py-3 text-sm font-medium">
       {{ labels.sent }}
     </p>

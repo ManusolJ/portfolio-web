@@ -11,7 +11,7 @@ const API_URL = 'https://api.manusoler.dev/api/v1/contact';
 export class ContactService {
   private readonly http = inject(HttpClient);
 
-  sendMessage(request: ContactMessage): Observable<ContactMessage> {
-    return this.http.post<ContactMessage>(API_URL, request);
+  sendMessage(request: ContactMessage): Observable<void> {
+    return this.http.post<void>(API_URL, request);
   }
 }

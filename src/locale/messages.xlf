@@ -188,98 +188,119 @@
         <source>Hablemos</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
-          <context context-type="linenumber">48</context>
+          <context context-type="linenumber">54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.pretitle" datatype="html">
         <source>Contacto</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
-          <context context-type="linenumber">49</context>
+          <context context-type="linenumber">55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.intro" datatype="html">
         <source>¿Tienes una oferta, una pregunta o un proyecto en mente? Escríbeme y te responderé a la dirección que indiques.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
-          <context context-type="linenumber">50</context>
+          <context context-type="linenumber">56</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.name" datatype="html">
         <source>Nombre</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
-          <context context-type="linenumber">53</context>
+          <context context-type="linenumber">59</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.subject" datatype="html">
         <source>Asunto</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
-          <context context-type="linenumber">54</context>
+          <context context-type="linenumber">60</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.message" datatype="html">
         <source>Mensaje</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
-          <context context-type="linenumber">55</context>
+          <context context-type="linenumber">61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.send" datatype="html">
         <source>Enviar mensaje</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
-          <context context-type="linenumber">56</context>
+          <context context-type="linenumber">62</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.email" datatype="html">
         <source>Correo electrónico</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
-          <context context-type="linenumber">57</context>
+          <context context-type="linenumber">63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.fallback" datatype="html">
         <source>Si prefieres, escríbeme directamente a</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
-          <context context-type="linenumber">58</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.sending" datatype="html">
+        <source>Enviando…</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
+          <context context-type="linenumber">65</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.sent" datatype="html">
-        <source>Se ha abierto tu cliente de correo con el mensaje listo para enviar.</source>
+        <source>Mensaje enviado. Te responderé lo antes posible.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
-          <context context-type="linenumber">59</context>
+          <context context-type="linenumber">66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.error.required" datatype="html">
         <source>Este campo es obligatorio.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
-          <context context-type="linenumber">63</context>
+          <context context-type="linenumber">70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.error.maxlength" datatype="html">
         <source>Has superado la longitud máxima.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
-          <context context-type="linenumber">64</context>
+          <context context-type="linenumber">71</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.error.email" datatype="html">
         <source>Introduce una dirección de correo válida.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
-          <context context-type="linenumber">65</context>
+          <context context-type="linenumber">72</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.error.minlength" datatype="html">
         <source>El mensaje debe tener al menos <x id="min" equiv-text="LIMITS.messageMin"/> caracteres.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
-          <context context-type="linenumber">66</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.failure.generic" datatype="html">
+        <source>No se ha podido enviar el mensaje. Inténtalo de nuevo o escríbeme directamente.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.failure.rateLimit" datatype="html">
+        <source>Has enviado demasiados mensajes. Inténtalo de nuevo más tarde.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
+          <context context-type="linenumber">78</context>
         </context-group>
       </trans-unit>
       <trans-unit id="education.pretitle" datatype="html">
@@ -317,29 +338,29 @@
           <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="notFound.back" datatype="html">
+        <source>Volver al inicio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/not-found/not-found.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="notFound.pretitle" datatype="html">
         <source>Error 404</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/not-found/not-found.ts</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="notFound.title" datatype="html">
         <source>Esta página no existe</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/not-found/not-found.ts</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="notFound.body" datatype="html">
         <source>Puede que el enlace esté mal escrito o que la página se haya movido.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/not-found/not-found.ts</context>
-          <context context-type="linenumber">20</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="notFound.back" datatype="html">
-        <source>Volver al inicio</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/not-found/not-found.ts</context>
           <context context-type="linenumber">21</context>
@@ -484,7 +505,7 @@
         <source>Idioma</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/sidebar/locale-switch/locale-switch.ts</context>
-          <context context-type="linenumber">26</context>
+          <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="nav.profile.download" datatype="html">

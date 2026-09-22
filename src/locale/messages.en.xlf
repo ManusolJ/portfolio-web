@@ -248,10 +248,31 @@
         </context-group>
       </trans-unit>
       <trans-unit id="contact.sent" datatype="html">
-        <source>Se ha abierto tu cliente de correo con el mensaje listo para enviar.</source>
-        <target>Your email client has opened with the message ready to send.</target><context-group purpose="location">
+        <source>Mensaje enviado. Te responderé lo antes posible.</source>
+        <target>Message sent. I will get back to you as soon as possible.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
-          <context context-type="linenumber">59</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.sending" datatype="html">
+        <source>Enviando…</source>
+        <target>Sending…</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.failure.generic" datatype="html">
+        <source>No se ha podido enviar el mensaje. Inténtalo de nuevo o escríbeme directamente.</source>
+        <target>The message could not be sent. Try again or email me directly.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.failure.rateLimit" datatype="html">
+        <source>Has enviado demasiados mensajes. Inténtalo de nuevo más tarde.</source>
+        <target>You have sent too many messages. Please try again later.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.ts</context>
+          <context context-type="linenumber">78</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.error.required" datatype="html">

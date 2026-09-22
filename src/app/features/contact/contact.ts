@@ -1,4 +1,5 @@
 import type { AbstractControl } from '@angular/forms';
+import type { HttpErrorResponse } from '@angular/common/http';
 
 import { NgIcon } from '@ng-icons/core';
 import { lucideMail, lucideSend } from '@ng-icons/lucide';
@@ -31,7 +32,9 @@ export class Contact {
   protected readonly limits = LIMITS;
   protected readonly icon = lucideMail;
   protected readonly sendIcon = lucideSend;
+  protected readonly sending = signal(false);
   protected readonly submitted = signal(false);
+  protected readonly failure = signal<string | null>(null);
 
   protected readonly form = this.formBuilder.group({
     name: ['', [Validators.required, Validators.maxLength(LIMITS.nameMax)]],
@@ -59,7 +62,8 @@ export class Contact {
     send: $localize`:@@contact.send:Enviar mensaje`,
     email: $localize`:@@contact.email:Correo electrónico`,
     fallback: $localize`:@@contact.fallback:Si prefieres, escríbeme directamente a`,
-    sent: $localize`:@@contact.sent:Se ha abierto tu cliente de correo con el mensaje listo para enviar.`,
+    sending: $localize`:@@contact.sending:Enviando…`,
+    sent: $localize`:@@contact.sent:Mensaje enviado. Te responderé lo antes posible.`,
   };
 
   protected readonly errors: Record<string, string> = {
@@ -67,6 +71,11 @@ export class Contact {
     maxlength: $localize`:@@contact.error.maxlength:Has superado la longitud máxima.`,
     email: $localize`:@@contact.error.email:Introduce una dirección de correo válida.`,
     minlength: $localize`:@@contact.error.minlength:El mensaje debe tener al menos ${LIMITS.messageMin}:min: caracteres.`,
+  };
+
+  protected readonly failures = {
+    generic: $localize`:@@contact.failure.generic:No se ha podido enviar el mensaje. Inténtalo de nuevo o escríbeme directamente.`,
+    rateLimit: $localize`:@@contact.failure.rateLimit:Has enviado demasiados mensajes. Inténtalo de nuevo más tarde.`,
   };
 
   protected readonly contactEmail = CONTACT_EMAIL;
@@ -87,13 +96,26 @@ export class Contact {
       return;
     }
 
-    const { ...message } = this.form.getRawValue();
+    const { website, ...message } = this.form.getRawValue();
 
-    this.contactService.sendMessage({
-      name: message.name,
-      email: message.email,
-      subject: message.subject,
-      message: message.message,
+    if (website) {
+      this.submitted.set(true);
+      return;
+    }
+
+    this.failure.set(null);
+    this.sending.set(true);
+
+    this.contactService.sendMessage(message).subscribe({
+      next: () => {
+        this.sending.set(false);
+        this.submitted.set(true);
+        this.form.reset();
+      },
+      error: (error: HttpErrorResponse) => {
+        this.sending.set(false);
+        this.failure.set(error.status === 429 ? this.failures.rateLimit : this.failures.generic);
+      },
     });
   }
 }
