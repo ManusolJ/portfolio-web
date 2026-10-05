@@ -83,8 +83,8 @@
             <div class="flex items-center gap-2">
               <span
                 class="size-2.5 shrink-0 rounded-full"
-                [class]="service.up ? 'bg-accent' : 'bg-danger'"
-                [attr.aria-label]="service.up ? labels.up : labels.down"
+                [class]="dotClass(service)"
+                [attr.aria-label]="dotLabel(service)"
               ></span>
               <span class="font-medium">{{ service.name }}</span>
             </div>

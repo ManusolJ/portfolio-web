@@ -567,18 +567,25 @@
           <context context-type="linenumber">58</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="server.lastKnown" datatype="html">
+        <source>Última lectura conocida</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="server.unreachable" datatype="html">
         <source>No se ha podido contactar con el servidor desde</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">59</context>
+          <context context-type="linenumber">60</context>
         </context-group>
       </trans-unit>
       <trans-unit id="server.measured" datatype="html">
         <source>Medido desde Cloudflare cada 5 minutos. Última lectura:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">60</context>
+          <context context-type="linenumber">61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="skills.backend" datatype="html">

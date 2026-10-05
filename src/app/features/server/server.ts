@@ -13,7 +13,7 @@ import {
 
 import { ServerStatusReader } from '@core/services/server-status';
 
-import type { ServerDay, ServerStatusRecord } from '@shared/models/server-status';
+import type { ServerDay, ServerService, ServerStatusRecord } from '@shared/models/server-status';
 
 import { TitleCard } from '@shared/components/title-card/title-card';
 
@@ -56,6 +56,7 @@ export class Server {
     ongoing: $localize`:@@server.ongoing:Incidencia en curso desde`,
     lastIncident: $localize`:@@server.lastIncident:Última incidencia`,
     noIncidents: $localize`:@@server.noIncidents:Sin incidencias registradas`,
+    lastKnown: $localize`:@@server.lastKnown:Última lectura conocida`,
     unreachable: $localize`:@@server.unreachable:No se ha podido contactar con el servidor desde`,
     measured: $localize`:@@server.measured:Medido desde Cloudflare cada 5 minutos. Última lectura:`,
   };
@@ -91,6 +92,22 @@ export class Server {
 
   protected days(seconds: number): number {
     return Math.floor(seconds / 86400);
+  }
+
+  protected dotClass(service: ServerService): string {
+    if (!this.record()?.reachable) {
+      return 'bg-muted/50';
+    }
+
+    return service.up ? 'bg-accent' : 'bg-danger';
+  }
+
+  protected dotLabel(service: ServerService): string {
+    if (!this.record()?.reachable) {
+      return this.labels.lastKnown;
+    }
+
+    return service.up ? this.labels.up : this.labels.down;
   }
 
   protected barClass(day: ServerDay): string {
