@@ -1,6 +1,139 @@
 <app-title-card [icon]="icon" [pretitle]="pretitle" [title]="title" />
 
-<div class="w-full flex flex-col items-center gap-4">
-  <h2 class="mt-12 text-lg">{{ placeholder }}</h2>
-  <ng-icon [svg]="placeholderIcon" size="128" />
-</div>
+@let status = record();
+@let payload = status?.data ?? null;
+
+@if (loading()) {
+  <p class="text-muted mt-8 text-sm">{{ labels.loading }}</p>
+} @else if (!status?.reachable) {
+  <p
+    role="status"
+    class="bg-danger/10 text-danger mt-8 flex items-center gap-2 rounded-lg px-4 py-3 text-sm font-medium"
+  >
+    <ng-icon [svg]="alertIcon" size="18" class="shrink-0" />
+    {{ labels.unreachable }}
+    {{ status?.unreachableSince | date: 'short' }}
+  </p>
+}
+
+@if (payload?.host; as host) {
+  <section class="mt-8">
+    <h2 class="text-sm font-semibold tracking-wide uppercase">{{ labels.machine }}</h2>
+
+    <dl class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3">
+      <div class="bg-surface border-line rounded-lg border p-4">
+        <dt class="text-muted text-xs">{{ labels.cpu }}</dt>
+        <dd class="mt-1 text-2xl font-semibold tabular-nums">
+          {{ host.cpuPercent | number: '1.0-1' }}%
+        </dd>
+      </div>
+
+      <div class="bg-surface border-line rounded-lg border p-4">
+        <dt class="text-muted text-xs">{{ labels.memory }}</dt>
+        <dd class="mt-1 text-2xl font-semibold tabular-nums">
+          {{ percentOf(host.memUsedBytes, host.memTotalBytes) }}%
+        </dd>
+        <p class="text-muted mt-1 text-xs tabular-nums">
+          {{ gibibytes(host.memUsedBytes) }} / {{ gibibytes(host.memTotalBytes) }} GiB
+        </p>
+      </div>
+
+      <div class="bg-surface border-line rounded-lg border p-4">
+        <dt class="text-muted text-xs">{{ labels.disk }}</dt>
+        <dd class="mt-1 text-2xl font-semibold tabular-nums">
+          {{ percentOf(host.diskUsedBytes, host.diskTotalBytes) }}%
+        </dd>
+        <p class="text-muted mt-1 text-xs tabular-nums">
+          {{ gibibytes(host.diskUsedBytes) }} / {{ gibibytes(host.diskTotalBytes) }} GiB
+        </p>
+      </div>
+
+      <div class="bg-surface border-line rounded-lg border p-4">
+        <dt class="text-muted text-xs">{{ labels.load }}</dt>
+        <dd class="mt-1 text-2xl font-semibold tabular-nums">
+          {{ host.load1m | number: '1.2-2' }}
+        </dd>
+      </div>
+
+      <div class="bg-surface border-line rounded-lg border p-4">
+        <dt class="text-muted text-xs">{{ labels.uptime }}</dt>
+        <dd class="mt-1 text-2xl font-semibold tabular-nums">{{ days(host.uptimeSeconds) }}d</dd>
+      </div>
+
+      @if (host.tempCelsius !== null) {
+        <div class="bg-surface border-line rounded-lg border p-4">
+          <dt class="text-muted text-xs">{{ labels.temperature }}</dt>
+          <dd class="mt-1 text-2xl font-semibold tabular-nums">
+            {{ host.tempCelsius | number: '1.0-0' }}°C
+          </dd>
+        </div>
+      }
+    </dl>
+  </section>
+}
+
+@if (payload?.services?.length) {
+  <section class="mt-10">
+    <h2 class="text-sm font-semibold tracking-wide uppercase">{{ labels.services }}</h2>
+
+    <ul class="mt-4 flex flex-col gap-4">
+      @for (service of payload?.services; track service.name) {
+        <li class="bg-surface border-line rounded-lg border p-4">
+          <div class="flex flex-wrap items-baseline justify-between gap-2">
+            <div class="flex items-center gap-2">
+              <span
+                class="size-2.5 shrink-0 rounded-full"
+                [class]="service.up ? 'bg-accent' : 'bg-danger'"
+                [attr.aria-label]="service.up ? labels.up : labels.down"
+              ></span>
+              <span class="font-medium">{{ service.name }}</span>
+            </div>
+
+            <span class="text-muted text-xs tabular-nums">
+              {{ labels.uptime90 }}: {{ service.uptime.last90Days | number: '1.2-2' }}%
+              @if (service.latencyMs !== null) {
+                · {{ service.latencyMs }} ms
+              }
+            </span>
+          </div>
+
+          @if (service.days.length) {
+            <div
+              class="mt-3 flex h-8 items-end gap-px"
+              role="img"
+              [attr.aria-label]="labels.uptime90"
+            >
+              @for (day of service.days; track day.day) {
+                <span
+                  class="h-full flex-1 rounded-xs"
+                  [class]="barClass(day)"
+                  [title]="day.day"
+                ></span>
+              }
+            </div>
+          }
+
+          <p class="text-muted mt-3 text-xs">
+            @if (service.lastIncident; as incident) {
+              @if (incident.ongoing) {
+                {{ labels.ongoing }} {{ incident.startedAt | date: 'short' }}
+              } @else {
+                {{ labels.lastIncident }}: {{ incident.startedAt | date: 'short' }}
+              }
+            } @else {
+              {{ labels.noIncidents }}
+            }
+          </p>
+        </li>
+      }
+    </ul>
+  </section>
+} @else if (!loading()) {
+  <p class="text-muted mt-8 text-sm">{{ labels.noData }}</p>
+}
+
+@if (status?.fetchedAt) {
+  <p class="text-muted mt-8 text-xs">
+    {{ labels.measured }} {{ status?.fetchedAt | date: 'short' }}
+  </p>
+}

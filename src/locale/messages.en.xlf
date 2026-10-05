@@ -1159,11 +1159,137 @@
           <context context-type="linenumber">15</context>
         </context-group>
       </trans-unit>      
-      <trans-unit id="server.placeholder" datatype="html">
-        <source>¡Esta función llegará más adelante, cuando el backend esté listo!</source>
-        <target>This feature will come later when the backend is ready!</target><context-group purpose="location">
+      <trans-unit id="server.cpu" datatype="html">
+        <source>CPU</source>
+        <target>CPU</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="server.load" datatype="html">
+        <source>Carga</source>
+        <target>Load</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="server.disk" datatype="html">
+        <source>Disco</source>
+        <target>Disk</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="server.memory" datatype="html">
+        <source>Memoria</source>
+        <target>Memory</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="server.uptime" datatype="html">
+        <source>Encendido</source>
+        <target>Uptime</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="server.machine" datatype="html">
+        <source>La máquina</source>
+        <target>The machine</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="server.services" datatype="html">
+        <source>Servicios</source>
+        <target>Services</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="server.temperature" datatype="html">
+        <source>Temperatura</source>
+        <target>Temperature</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="server.loading" datatype="html">
+        <source>Consultando el servidor…</source>
+        <target>Checking the server…</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="server.noData" datatype="html">
+        <source>Sin datos todavía.</source>
+        <target>No data yet.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="server.up" datatype="html">
+        <source>En línea</source>
+        <target>Online</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="server.down" datatype="html">
+        <source>Caído</source>
+        <target>Down</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="server.uptime90" datatype="html">
+        <source>90 días</source>
+        <target>90 days</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="server.ongoing" datatype="html">
+        <source>Incidencia en curso desde</source>
+        <target>Ongoing incident since</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="server.lastIncident" datatype="html">
+        <source>Última incidencia</source>
+        <target>Last incident</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="server.noIncidents" datatype="html">
+        <source>Sin incidencias registradas</source>
+        <target>No incidents recorded</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="server.unreachable" datatype="html">
+        <source>No se ha podido contactar con el servidor desde</source>
+        <target>The server could not be reached since</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="server.measured" datatype="html">
+        <source>Medido desde Cloudflare cada 5 minutos. Última lectura:</source>
+        <target>Measured from Cloudflare every 5 minutes. Last reading:</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.portfolio.name" datatype="html">
+        <source>Este Portfolio</source>
+        <target>This Portfolio</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/constants/projects.ts</context>
+          <context context-type="linenumber">1</context>
         </context-group>
       </trans-unit>
     </body>
