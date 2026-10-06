@@ -17,6 +17,7 @@ import type { ServerDay, ServerService, ServerStatusRecord } from '@shared/model
 
 import { TitleCard } from '@shared/components/title-card/title-card';
 
+const BAR_COUNT = 90;
 const REQUEST_TIMEOUT_MS = 3000;
 const BYTES_PER_GIB = 1024 ** 3;
 
@@ -53,6 +54,9 @@ export class Server {
     up: $localize`:@@server.up:En línea`,
     down: $localize`:@@server.down:Caído`,
     uptime90: $localize`:@@server.uptime90:90 días`,
+    sinceStart: $localize`:@@server.sinceStart:Desde el inicio`,
+    noDay: $localize`:@@server.noDay:Sin datos`,
+    partialDay: $localize`:@@server.partialDay:Datos incompletos`,
     ongoing: $localize`:@@server.ongoing:Incidencia en curso desde`,
     lastIncident: $localize`:@@server.lastIncident:Última incidencia`,
     noIncidents: $localize`:@@server.noIncidents:Sin incidencias registradas`,
@@ -110,19 +114,37 @@ export class Server {
     return service.up ? this.labels.up : this.labels.down;
   }
 
-  protected barClass(day: ServerDay): string {
-    if (day.hasGap) {
-      return 'bg-muted/40';
+  protected barsOf(service: ServerService): readonly (ServerDay | null)[] {
+    const byDay = new Map(service.days.map((day) => [day.day, day]));
+    const today = new Date();
+
+    return Array.from({ length: BAR_COUNT }, (unused, index) => {
+      const date = new Date(today);
+      date.setDate(today.getDate() - (BAR_COUNT - 1 - index));
+
+      return byDay.get(date.toISOString().slice(0, 10)) ?? null;
+    });
+  }
+
+  protected barClass(day: ServerDay | null): string {
+    if (day === null) {
+      return 'bg-line/60';
     }
 
-    if (day.uptime >= 99.5) {
-      return 'bg-accent';
+    const tone = day.uptime >= 99.5 ? 'bg-accent' : day.uptime >= 95 ? 'bg-amber-500' : 'bg-danger';
+
+    return day.hasGap ? `${tone} opacity-40` : tone;
+  }
+
+  protected barTitle(day: ServerDay | null): string {
+    if (day === null) {
+      return this.labels.noDay;
     }
 
-    if (day.uptime >= 95) {
-      return 'bg-amber-500';
-    }
+    return `${day.day} · ${day.uptime.toFixed(2)}%${day.hasGap ? ` · ${this.labels.partialDay}` : ''}`;
+  }
 
-    return 'bg-danger';
+  protected windowLabel(service: ServerService): string {
+    return service.days.length >= BAR_COUNT ? this.labels.uptime90 : this.labels.sinceStart;
   }
 }
