@@ -44,7 +44,7 @@
 <section class="mt-10">
   <h2 class="text-2xl font-bold">{{ bioTitle }}</h2>
   @for (paragraph of bio; track $index) {
-    <p class="text-content mt-3 max-w-prose leading-relaxed">{{ paragraph }}</p>
+    <p class="text-content mt-3 max-w-2xl leading-relaxed">{{ paragraph }}</p>
   }
   <a
     routerLink="/contact"
