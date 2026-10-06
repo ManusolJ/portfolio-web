@@ -445,147 +445,168 @@
         <source>Servidor</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">40</context>
         </context-group>
       </trans-unit>
       <trans-unit id="server.title" datatype="html">
         <source>Lo que he desplegado</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">40</context>
+          <context context-type="linenumber">41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="server.cpu" datatype="html">
         <source>CPU</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">44</context>
         </context-group>
       </trans-unit>
       <trans-unit id="server.load" datatype="html">
         <source>Carga</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">44</context>
+          <context context-type="linenumber">45</context>
         </context-group>
       </trans-unit>
       <trans-unit id="server.disk" datatype="html">
         <source>Disco</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">45</context>
+          <context context-type="linenumber">46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="server.memory" datatype="html">
         <source>Memoria</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">46</context>
+          <context context-type="linenumber">47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="server.uptime" datatype="html">
         <source>Encendido</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">47</context>
+          <context context-type="linenumber">48</context>
         </context-group>
       </trans-unit>
       <trans-unit id="server.machine" datatype="html">
         <source>La máquina</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">48</context>
+          <context context-type="linenumber">49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="server.services" datatype="html">
         <source>Servicios</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">49</context>
+          <context context-type="linenumber">50</context>
         </context-group>
       </trans-unit>
       <trans-unit id="server.temperature" datatype="html">
         <source>Temperatura</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">50</context>
+          <context context-type="linenumber">51</context>
         </context-group>
       </trans-unit>
       <trans-unit id="server.loading" datatype="html">
         <source>Consultando el servidor…</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">51</context>
+          <context context-type="linenumber">52</context>
         </context-group>
       </trans-unit>
       <trans-unit id="server.noData" datatype="html">
         <source>Sin datos todavía.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">52</context>
+          <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="server.up" datatype="html">
         <source>En línea</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">53</context>
+          <context context-type="linenumber">54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="server.down" datatype="html">
         <source>Caído</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">54</context>
+          <context context-type="linenumber">55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="server.uptime90" datatype="html">
         <source>90 días</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">55</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="server.sinceStart" datatype="html">
+        <source>Desde el inicio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="server.noDay" datatype="html">
+        <source>Sin datos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="server.partialDay" datatype="html">
+        <source>Datos incompletos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/server/server.ts</context>
+          <context context-type="linenumber">59</context>
         </context-group>
       </trans-unit>
       <trans-unit id="server.ongoing" datatype="html">
         <source>Incidencia en curso desde</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">56</context>
+          <context context-type="linenumber">60</context>
         </context-group>
       </trans-unit>
       <trans-unit id="server.lastIncident" datatype="html">
         <source>Última incidencia</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">57</context>
+          <context context-type="linenumber">61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="server.noIncidents" datatype="html">
         <source>Sin incidencias registradas</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">58</context>
+          <context context-type="linenumber">62</context>
         </context-group>
       </trans-unit>
       <trans-unit id="server.lastKnown" datatype="html">
         <source>Última lectura conocida</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">59</context>
+          <context context-type="linenumber">63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="server.unreachable" datatype="html">
         <source>No se ha podido contactar con el servidor desde</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">60</context>
+          <context context-type="linenumber">64</context>
         </context-group>
       </trans-unit>
       <trans-unit id="server.measured" datatype="html">
         <source>Medido desde Cloudflare cada 5 minutos. Última lectura:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/server/server.ts</context>
-          <context context-type="linenumber">61</context>
+          <context context-type="linenumber">65</context>
         </context-group>
       </trans-unit>
       <trans-unit id="skills.backend" datatype="html">
