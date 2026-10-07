@@ -12,7 +12,8 @@ const RESPONSE_HEADERS = {
 
 export default {
   async scheduled(_controller, env) {
-    const previous = await env.STATUS.get<StatusRecord>(STATUS_KEY, 'json');
+    const stored = await env.STATUS.get(STATUS_KEY);
+    const previous = parseRecord(stored);
     let record: StatusRecord;
 
     try {
@@ -21,7 +22,11 @@ export default {
       record = markUnreachable(previous);
     }
 
-    await env.STATUS.put(STATUS_KEY, JSON.stringify(record));
+    const next = JSON.stringify(record);
+
+    if (next !== stored) {
+      await env.STATUS.put(STATUS_KEY, next);
+    }
   },
 
   async fetch(request, env) {
@@ -40,6 +45,18 @@ export default {
     return new Response(record ?? EMPTY_RECORD, { headers: RESPONSE_HEADERS });
   },
 } satisfies ExportedHandler<Env>;
+
+function parseRecord(stored: string | null): StatusRecord | null {
+  if (stored === null) {
+    return null;
+  }
+
+  try {
+    return JSON.parse(stored) as StatusRecord;
+  } catch {
+    return null;
+  }
+}
 
 async function poll(apiUrl: string): Promise<unknown> {
   const response = await fetch(`${apiUrl}/api/v1/status`, {
