@@ -12,24 +12,24 @@ const RESPONSE_HEADERS = {
 
 export default {
   async scheduled(_controller, env) {
-    const stored = await env.STATUS.get(STATUS_KEY);
-    const previous = parseRecord(stored);
-    let record: StatusRecord;
+    let next: string;
 
     try {
-      record = markReachable(await poll(env.API_URL));
+      next = JSON.stringify(markReachable(await poll(env.API_URL)));
     } catch {
-      record = markUnreachable(previous);
+      const stored = await env.STATUS.get(STATUS_KEY);
+
+      next = JSON.stringify(markUnreachable(parseRecord(stored)));
+
+      if (next === stored) {
+        return;
+      }
     }
 
-    const next = JSON.stringify(record);
-
-    if (next !== stored) {
-      await env.STATUS.put(STATUS_KEY, next);
-    }
+    await env.STATUS.put(STATUS_KEY, next);
   },
 
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const { pathname } = new URL(request.url);
 
     if (pathname !== STATUS_PATH) {
@@ -40,9 +40,19 @@ export default {
       return new Response(null, { status: 405, headers: { allow: 'GET, HEAD' } });
     }
 
-    const record = await env.STATUS.get(STATUS_KEY);
+    const cache = caches.default;
+    const cached = await cache.match(request.url);
 
-    return new Response(record ?? EMPTY_RECORD, { headers: RESPONSE_HEADERS });
+    if (cached) {
+      return cached;
+    }
+
+    const record = await env.STATUS.get(STATUS_KEY);
+    const response = new Response(record ?? EMPTY_RECORD, { headers: RESPONSE_HEADERS });
+
+    ctx.waitUntil(cache.put(request.url, response.clone()));
+
+    return response;
   },
 } satisfies ExportedHandler<Env>;
 
