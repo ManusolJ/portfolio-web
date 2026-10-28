@@ -845,14 +845,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="about.interests.programming.title" datatype="html">
-        <source>Progamación</source>
+        <source>Programación</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/constants/interests.ts</context>
           <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.interests.languages.description" datatype="html">
-        <source>Siempre estoy estudiando y repasando conceptos de diferentes lenguajes de progamación.</source>
+        <source>Siempre estoy estudiando y repasando conceptos de diferentes lenguajes de programación.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/constants/interests.ts</context>
           <context context-type="linenumber">24</context>

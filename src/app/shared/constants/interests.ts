@@ -20,7 +20,7 @@ export const INTERESTS: readonly Interest[] = [
   },
   {
     icon: lucideComputer,
-    title: $localize`:@@about.interests.programming.title:Progamación`,
-    description: $localize`:@@about.interests.languages.description:Siempre estoy estudiando y repasando conceptos de diferentes lenguajes de progamación.`,
+    title: $localize`:@@about.interests.programming.title:Programación`,
+    description: $localize`:@@about.interests.languages.description:Siempre estoy estudiando y repasando conceptos de diferentes lenguajes de programación.`,
   },
 ];
